@@ -1,4 +1,6 @@
 from starkware.cairo.common.registers import get_fp_and_pc
+from starkware.cairo.common.dict_access import DictAccess
+from starkware.cairo.common.squash_dict import squash_dict
 
 struct Location {
     row: felt,
@@ -65,6 +67,39 @@ func verify_location_list(loc_list: Location*, n_steps) {
         loc_list=loc_list + Location.SIZE, n_steps=n_steps - 1
     );
     return ();
+}
+
+func build_dict(
+    loc_list: Location*,
+    tile_list: felt*,
+    n_steps,
+    dict: DictAccess*,
+) -> (dict: DictAccess*) {
+    if (n_steps == 0) {
+        // When there are no more steps, just return the dict
+        // pointer.
+        return (dict=dict);
+    }
+
+    // Set the key to the current tile being moved.
+    assert dict.key = [tile_list];
+
+    // Its previous location should be where the empty tile is
+    // going to be.
+    let next_loc: Location* = loc_list + Location.SIZE;
+    assert dict.prev_value = 4 * next_loc.row + next_loc.col;
+
+    // Its next location should be where the empty tile is
+    // now.
+    assert dict.new_value = 4 * loc_list.row + loc_list.col;
+
+    // Call build_dict recursively.
+    return build_dict(
+        loc_list=next_loc,
+        tile_list=tile_list + 1,
+        n_steps=n_steps - 1,
+        dict=dict + DictAccess.SIZE,
+    );
 }
 
 
