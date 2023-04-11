@@ -1,6 +1,9 @@
+%builtins output range_check
 from starkware.cairo.common.registers import get_fp_and_pc
 from starkware.cairo.common.dict_access import DictAccess
 from starkware.cairo.common.squash_dict import squash_dict
+from starkware.cairo.common.serialize import serialize_word
+from starkware.cairo.common.alloc import alloc
 
 struct Location {
     row: felt,
@@ -102,8 +105,105 @@ func build_dict(
     );
 }
 
+func finalize_state(dict: DictAccess*, idx) -> (
+    dict: DictAccess*
+) {
+    if (idx == 0) {
+        return (dict=dict);
+    }
 
-func main() {
+    // key: actual number of location
+    // prev_value, new_value: encoded location of coordinate
+    // for example, (2, 2) = 2*4 + 2 = 10
+    //
+    // index:
+    //
+    // 00 01 02 03
+    // 04 05 06 07
+    // 08 09 10 11
+    // 12 13 14 15
+    //
+    // dict_key starts from 1:
+    // 
+    // 01 02 03 04
+    // 05 06 07 08
+    // 09 10 11 12
+    // 13 14 15 ??
+    // 
+    // for example, if dict_key = 11,
+    // then index is 10, which translates to (2, 2) in coordinate
+    // 
+
+    assert dict.key = idx;
+    assert dict.prev_value = idx - 1;
+    assert dict.new_value = idx - 1;
+
+    // Call finalize_state recursively.
+    return finalize_state(
+        dict=dict + DictAccess.SIZE, idx=idx - 1
+    );
+}
+
+func output_initial_values{output_ptr: felt*}(
+    squashed_dict: DictAccess*, n
+) {
+    if (n == 0) {
+        return ();
+    }
+
+    serialize_word(squashed_dict.prev_value);
+
+    // Call output_initial_values recursively.
+    return output_initial_values(
+        squashed_dict=squashed_dict + DictAccess.SIZE, n=n - 1
+    );
+}
+
+func check_solution{output_ptr: felt*, range_check_ptr}(
+    loc_list: Location*, tile_list: felt*, n_steps
+) {
+    alloc_locals;
+
+    // Start by verifying that loc_list is valid.
+    verify_location_list(loc_list=loc_list, n_steps=n_steps);
+
+    // Allocate memory for the dict and the squashed dict.
+    let (local dict_start: DictAccess*) = alloc();
+    let (local squashed_dict: DictAccess*) = alloc();
+
+    let (dict_end) = build_dict(
+        loc_list=loc_list,
+        tile_list=tile_list,
+        n_steps=n_steps,
+        dict=dict_start,
+    );
+
+    let (dict_end) = finalize_state(dict=dict_end, idx=15);
+
+    let (squashed_dict_end: DictAccess*) = squash_dict(
+        dict_accesses=dict_start,
+        dict_accesses_end=dict_end,
+        squashed_dict=squashed_dict,
+    );
+
+    // Verify that the squashed dict has exactly 15 entries.
+    // This will guarantee that all the values in the tile list
+    // are in the range 1-15.
+    assert squashed_dict_end - squashed_dict = 15 *
+        DictAccess.SIZE;
+
+    output_initial_values(squashed_dict=squashed_dict, n=15);
+
+    // Output the initial location of the empty tile.
+    serialize_word(4 * loc_list.row + loc_list.col);
+
+    // Output the number of steps.
+    serialize_word(n_steps);
+
+    return ();
+}
+
+func main{output_ptr: felt*, range_check_ptr}() {
     alloc_locals;
 
     local loc_tuple: (
@@ -116,14 +216,15 @@ func main() {
         Location(row=3, col=3),
     );
 
+    local tiles: (felt, felt, felt, felt) = (3, 7, 8, 12);
+
     // Get the value of the frame pointer register (fp) so that
-    // we can use the address of loc_tuple.
+    // we can use the address of loc0.
     let (__fp__, _) = get_fp_and_pc();
-    // Since the tuple elements are next to each other, we can
-    // use the address of loc_tuple as a pointer to the 5
-    // locations.
-    verify_location_list(
-        loc_list=cast(&loc_tuple, Location*), n_steps=4
+    check_solution(
+        loc_list=cast(&loc_tuple, Location*),
+        tile_list=cast(&tiles, felt*),
+        n_steps=4,
     );
     return ();
 }
