@@ -97,12 +97,14 @@ func build_dict(
     assert dict.new_value = 4 * loc_list.row + loc_list.col;
 
     // Call build_dict recursively.
-    return build_dict(
+    build_dict(
         loc_list=next_loc,
         tile_list=tile_list + 1,
         n_steps=n_steps - 1,
         dict=dict + DictAccess.SIZE,
     );
+
+    return (dict=dict + DictAccess.SIZE * n_steps);
 }
 
 func finalize_state(dict: DictAccess*, idx) -> (
