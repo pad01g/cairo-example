@@ -37,6 +37,7 @@ func build_dict(list: KeyValue*, size, dict: DictAccess*) -> (
     // Verify that dict.new_value = dict.prev_value + list.value...
     // Call recursively to build_dict()...
     assert dict.key = list.key;
+    // what if cumulative_sum_so_far is a negative value?
     assert dict.prev_value = cumulative_sum_so_far;
     assert dict.new_value = dict.prev_value + list.value;
 
@@ -109,6 +110,8 @@ func sum_by_key{output_ptr: felt*, range_check_ptr}(list: KeyValue*, size) -> (
     %{
         ids.result_size = len(cumulative_sums);
     %}
+
+    // what if result_size = 0 ?
     assert squashed_dict_end - squashed_dict = result_size *
         DictAccess.SIZE;
 

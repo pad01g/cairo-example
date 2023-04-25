@@ -1,0 +1,52 @@
+{
+    "public_keys": [
+        "0x1c3eb6d67f833a9dac3766b2f22d31299875884f3fc84ebc70c322e8fb18112",
+        "0x22285e2a1c84a7b6e283eb1ee28a40ba30874aff62617ba1220d7dc6a2b1e70",
+        "0x2226376596c83aa0c5381b42b516bd84e604d7ff65647bab46feb7540a6544d",
+        "0x0",
+        "0x1b16536d44330830c39b119673c7a065fe6592094d8506221053176c9500e54",
+        "0x0",
+        "0x0",
+        "0x23592b2754186e35f970c72eea16d46df2570bc68e6ee3069d8aa68d1a1707a",
+        "0x0",
+        "0x2854a6d2c60e46b2f176659ccbffdddc3db9e2d1e74d3fa54f2fe252e571db0"
+    ],
+    "votes": [
+        {
+            "voter_id": 0,
+            "vote": 1,
+            "r": "0x4c2e33ad05968c37bc269b777a36ab15c20e62cffe4601e05ca389d018d0b92",
+            "s": "0x2855fc830ea424bc03fa3d5cb3857511936db56342903ff42ed115b0751e65"
+        },
+        {
+            "voter_id": 1,
+            "vote": 1,
+            "r": "0x650edd2604a1a9b0f76f427aa89f7458e8ee6e3df831d526b58b397735d9be4",
+            "s": "0x48bab820766f0e8ff1ca3d14243f0b20f5395a89f9be3fb5fd60440b683d734"
+        },
+        {
+            "voter_id": 2,
+            "vote": 1,
+            "r": "0x117a0b37b7dd6782d2143385631d795c52460f100d39fee1ee9946738a69314",
+            "s": "0x141ffa6963214686980fc97c653e56521c49d2f758239ab98d924bb9748354e"
+        },
+        {
+            "voter_id": 4,
+            "vote": 1,
+            "r": "0x4d186a16bba3f5553b82fcde0067ca724dff1d3afc3ef7c960b9ee73f89703",
+            "s": "0x40e1fd394ac074b706c4125eb1438fea7a4d400d313e69b2c910b3da5861359"
+        },
+        {
+            "voter_id": 7,
+            "vote": 1,
+            "r": "0x2bf62f5a9d1ee28c843e9f9d24e8bda11f6faa5f8c8ff22ec054a25c078f2a0",
+            "s": "0x757613ba433713c56096fda3d5e56c88c97314d52affd186dee80b322a892a8"
+        },
+        {
+            "voter_id": 9,
+            "vote": 1,
+            "r": "0x1d353ee4946af69d3f60da4af0516ca5ea00bfd4aab5178cc2a2e690f28270b",
+            "s": "0x7db1b6c596c2097310128324dd0edcd637e78f64c4df2049b5c14bac4b286ce"
+        }
+    ]
+}
