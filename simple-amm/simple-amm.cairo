@@ -1,11 +1,17 @@
-%builtins output pedersen range_check
+%builtins output pedersen range_check ecdsa
 from starkware.cairo.common.dict_access import DictAccess
 from starkware.cairo.common.dict import dict_read, dict_write
 from starkware.cairo.common.math import assert_nn_le
 from starkware.cairo.common.registers import get_fp_and_pc
 from starkware.cairo.common.math import unsigned_div_rem
-from starkware.cairo.common.cairo_builtins import HashBuiltin
+from starkware.cairo.common.cairo_builtins import (
+    HashBuiltin,
+    SignatureBuiltin,
+)
 from starkware.cairo.common.hash import hash2
+from starkware.cairo.common.signature import (
+    verify_ecdsa_signature,
+)
 from starkware.cairo.common.dict import dict_update
 from starkware.cairo.common.dict import dict_new, dict_squash
 from starkware.cairo.common.small_merkle_tree import (
@@ -37,6 +43,8 @@ struct AmmState {
 struct SwapTransaction {
     account_id: felt,
     token_a_amount: felt,
+    r: felt,
+    s: felt,
 }
 
 // The output of the AMM program.
@@ -106,7 +114,52 @@ func modify_account{range_check_ptr}(
     return (state=new_state, key=old_account.public_key);
 }
 
-func swap{range_check_ptr}(
+const POLL_ID = 10018;
+
+func verify_vote_signature{
+    pedersen_ptr: HashBuiltin*,
+    ecdsa_ptr: SignatureBuiltin*
+}(
+    state: AmmState,
+    transaction: SwapTransaction*,
+) -> (state: AmmState) {
+    alloc_locals;
+
+    let account_dict_end = state.account_dict_end;
+
+    // Retrieve the pointer to the current state of the account.
+    let (local account: Account*) = dict_read{
+        dict_ptr=account_dict_end
+    }(key=transaction.account_id);
+
+    // assert signature for swap
+    let (message) = hash2{hash_ptr=pedersen_ptr}(
+        x=POLL_ID, y=transaction.token_a_amount
+    );
+
+    verify_ecdsa_signature(
+        message=message,
+        public_key=account.public_key,
+        signature_r=transaction.r,
+        signature_s=transaction.s,
+    );
+
+    local new_state: AmmState;
+    assert new_state.account_dict_start = (
+        state.account_dict_start
+    );
+    assert new_state.account_dict_end = account_dict_end;
+    assert new_state.token_a_balance = state.token_a_balance;
+    assert new_state.token_b_balance = state.token_b_balance;
+
+    return (state=new_state);
+}
+
+func swap{
+    range_check_ptr,
+    pedersen_ptr: HashBuiltin*,
+    ecdsa_ptr: SignatureBuiltin*
+}(
     state: AmmState, transaction: SwapTransaction*
 ) -> (state: AmmState) {
     alloc_locals;
@@ -114,6 +167,8 @@ func swap{range_check_ptr}(
     tempvar a = transaction.token_a_amount;
     tempvar x = state.token_a_balance;
     tempvar y = state.token_b_balance;
+
+    let (state) = verify_vote_signature(state, transaction);
 
     // Check that a is in range.
     assert_nn_le(a, MAX_BALANCE);
@@ -165,7 +220,11 @@ func swap{range_check_ptr}(
     return (state=new_state);
 }
 
-func transaction_loop{range_check_ptr}(
+func transaction_loop{
+    range_check_ptr,
+    pedersen_ptr: HashBuiltin*,
+    ecdsa_ptr: SignatureBuiltin*
+}(
     state: AmmState,
     transactions: SwapTransaction**,
     n_transactions,
@@ -299,6 +358,8 @@ func get_transactions() -> (
             [
                 transaction['account_id'],
                 transaction['token_a_amount'],
+                int(transaction['r'], 16),
+                int(transaction['s'], 16),
             ]
             for transaction in program_input['transactions']
         ]
@@ -338,6 +399,7 @@ func main{
     output_ptr: felt*,
     pedersen_ptr: HashBuiltin*,
     range_check_ptr,
+    ecdsa_ptr: SignatureBuiltin*,
 }() {
     alloc_locals;
 
