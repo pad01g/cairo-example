@@ -5,56 +5,77 @@
         "0": {
             "public_key": "0x1c3eb6d67f833a9dac3766b2f22d31299875884f3fc84ebc70c322e8fb18112",
             "token_a_balance": 50,
-            "token_b_balance": 170
+            "token_b_balance": 170,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "1": {
             "public_key": "0x22285e2a1c84a7b6e283eb1ee28a40ba30874aff62617ba1220d7dc6a2b1e70",
             "token_a_balance": 60,
-            "token_b_balance": 180
+            "token_b_balance": 180,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "2": {
             "public_key": "0x2226376596c83aa0c5381b42b516bd84e604d7ff65647bab46feb7540a6544d",
             "token_a_balance": 120,
-            "token_b_balance": 200
+            "token_b_balance": 200,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "3": {
             "public_key": "0x492cf083fdc9d0c48bcc2807abd2a6da8550b872d047cd36e501a5e12cb581d",
             "token_a_balance": 140,
-            "token_b_balance": 190
+            "token_b_balance": 190,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "4": {
             "public_key": "0x1b16536d44330830c39b119673c7a065fe6592094d8506221053176c9500e54",
             "token_a_balance": 100,
-            "token_b_balance": 210
+            "token_b_balance": 210,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "5": {
             "public_key": "0x4cb42f213ed6dcfadb7b987fd31b2260334cbe404315708d17a2404fbadb11e",
             "token_a_balance": 80,
-            "token_b_balance": 170
+            "token_b_balance": 170,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "6": {
             "public_key": "0xb52947e334a58f8041373c44270c90c0bd28f345b0dac2af0886ec3cfab253",
             "token_a_balance": 130,
-            "token_b_balance": 180
+            "token_b_balance": 180,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "7": {
             "public_key": "0x23592b2754186e35f970c72eea16d46df2570bc68e6ee3069d8aa68d1a1707a",
             "token_a_balance": 110,
-            "token_b_balance": 200
+            "token_b_balance": 200,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "8": {
             "public_key": "0x529196a1456a35d3ee9138dd7355cb6416fe40deade3adab76f2e66554400ef",
             "token_a_balance": 70,
-            "token_b_balance": 190
+            "token_b_balance": 190,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         },
         "9": {
             "public_key": "0x2854a6d2c60e46b2f176659ccbffdddc3db9e2d1e74d3fa54f2fe252e571db0",
             "token_a_balance": 90,
-            "token_b_balance": 210
+            "token_b_balance": 210,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0
         }
     },
     "transactions": [
         {
+            "tx_type": 10018,
             "account_id": 5,
             "token_a_amount": 10,
             "token_b_amount": 0,
@@ -62,6 +83,15 @@
             "s": "0x2cd28a452ce5fedf848cc927e2f7b78b93b8cd6b54aefb75bdcd4f1951aad74"
         },
         {
+            "tx_type": 10019,
+            "account_id": 0,
+            "token_a_amount": 10,
+            "token_b_amount": 0,
+            "r": "0xb439f27c369cb4e38afa711400e7b563032894a309e75d0967d79a291aa51f",
+            "s": "0x53b80f651c35af7505087f9f7fa5c534dd5a18f8c46db5268f2d46000908213"
+        },
+        {
+            "tx_type": 10018,
             "account_id": 0,
             "token_a_amount": 10,
             "token_b_amount": 0,
@@ -69,11 +99,20 @@
             "s": "0x4669494bba83e26c9178a60bb3d928ee28d0f644f0147598f6699fdc442cef9"
         },
         {
+            "tx_type": 10018,
             "account_id": 9,
             "token_a_amount": 0,
             "token_b_amount": 20,
             "r": "0x61c7698d12294b765fe63e8339f4b497c376799afd2d1fcdecf88ce90f33a76",
             "s": "0x3715580f61483baa945b4ed16c2bf7d871646cc753893c87d76e0563b65a5b2"
+        },
+        {
+            "tx_type": 10019,
+            "account_id": 3,
+            "token_a_amount": 0,
+            "token_b_amount": 20,
+            "r": "0x36b83388c5b58548e1c656ec2780282c6434a061c2f2c0433895bd83e67c2bb",
+            "s": "0x32925793ec65e783714655833096038801bfdb14be1868654b8fe6320341427"
         }
     ]
 }

@@ -5,7 +5,8 @@ from starkware.crypto.signature.signature import (
 
 # Set an identifier that will represent what we're signing for.
 # message like "i am signing this for swap when id is ~"
-POLL_ID = 10018
+TX_TYPE_EXCHANGE = 10018
+TX_TYPE_LIQUIDITY_PROVIDER = 10019
 MAX_BALANCE = 2 ** 64 - 1
 
 # Generate key pairs.
@@ -20,11 +21,18 @@ for i in range(10):
     pub_keys.append(pub_key)
 
 transactions = []
-for (account_id, token_a_amount, token_b_amount) in [(5, 10, 0), (0, 10, 0), (9, 0, 20)]:
+for (tx_type, account_id, token_a_amount, token_b_amount) in [
+        (TX_TYPE_EXCHANGE,           5, 10, 0),
+        (TX_TYPE_LIQUIDITY_PROVIDER, 0, 10, 0),
+        (TX_TYPE_EXCHANGE,           0, 10, 0),
+        (TX_TYPE_EXCHANGE,           9, 0, 20),
+        (TX_TYPE_LIQUIDITY_PROVIDER, 3, 0, 20),
+    ]:
     r, s = sign(
-        msg_hash=pedersen_hash(POLL_ID, token_a_amount * MAX_BALANCE + token_b_amount),
+        msg_hash=pedersen_hash(tx_type, token_a_amount * MAX_BALANCE + token_b_amount),
         priv_key=priv_keys[account_id])
     transactions.append({
+        'tx_type': tx_type,
         'account_id': account_id,
         'token_a_amount': token_a_amount,
         'token_b_amount': token_b_amount,
@@ -41,6 +49,8 @@ input_data = {
             "public_key": v,
             "token_a_balance": (k**17 % 11 + 5)*10,
             "token_b_balance": (k**11 % 5 + 17)*10,
+            "provided_a_balance": 0,
+            "provided_b_balance": 0,
         } for (k, v) in enumerate(list(map(hex, pub_keys))) },
     'transactions': transactions,
 }

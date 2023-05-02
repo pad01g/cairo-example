@@ -24,6 +24,8 @@ struct Account {
     public_key: felt,
     token_a_balance: felt,
     token_b_balance: felt,
+    provided_a_balance: felt,
+    provided_b_balance: felt,
 }
 
 // The maximum amount of each token that belongs to the AMM.
@@ -41,6 +43,7 @@ struct AmmState {
 
 // Represents a swap transaction between a user and the AMM.
 struct SwapTransaction {
+    tx_type: felt,
     account_id: felt,
     token_a_amount: felt,
     token_b_amount: felt,
@@ -63,7 +66,7 @@ struct AmmBatchOutput {
 }
 
 func modify_account{range_check_ptr}(
-    state: AmmState, account_id, diff_a, diff_b
+    state: AmmState, account_id, diff_a, diff_b, provided_diff_a, provided_diff_b
 ) -> (state: AmmState, key: felt) {
     alloc_locals;
 
@@ -83,16 +86,26 @@ func modify_account{range_check_ptr}(
     tempvar new_token_b_balance = (
         old_account.token_b_balance + diff_b
     );
+    tempvar new_provided_a_balance = (
+        old_account.provided_a_balance + provided_diff_a
+    );
+    tempvar new_provided_b_balance = (
+        old_account.provided_b_balance + provided_diff_b
+    );
 
     // Verify that the new balances are positive.
     assert_nn_le(new_token_a_balance, MAX_BALANCE);
     assert_nn_le(new_token_b_balance, MAX_BALANCE);
+    assert_nn_le(new_provided_a_balance, MAX_BALANCE);
+    assert_nn_le(new_provided_b_balance, MAX_BALANCE);
 
     // Create a new Account instance.
     local new_account: Account;
     assert new_account.public_key = old_account.public_key;
     assert new_account.token_a_balance = new_token_a_balance;
     assert new_account.token_b_balance = new_token_b_balance;
+    assert new_account.provided_a_balance = new_provided_a_balance;
+    assert new_account.provided_b_balance = new_provided_b_balance;
 
     // Perform the account update.
     // Note that dict_write() will update the 'account_dict_end'
@@ -115,7 +128,8 @@ func modify_account{range_check_ptr}(
     return (state=new_state, key=old_account.public_key);
 }
 
-const POLL_ID = 10018;
+const TX_TYPE_EXCHANGE = 10018;
+const TX_TYPE_LIQUIDITY_PROVIDER = 10019;
 
 func verify_vote_signature{
     pedersen_ptr: HashBuiltin*,
@@ -135,7 +149,7 @@ func verify_vote_signature{
 
     // assert signature for swap
     let (message) = hash2{hash_ptr=pedersen_ptr}(
-        x=POLL_ID, y=transaction.token_a_amount * MAX_BALANCE + transaction.token_b_amount
+        x=transaction.tx_type, y=transaction.token_a_amount * MAX_BALANCE + transaction.token_b_amount
     );
 
     verify_ecdsa_signature(
@@ -175,6 +189,26 @@ func account_diff(
     }
 }
 
+func account_diff_provider(
+    a: felt,
+    b: felt,
+    diff_a: felt,
+    diff_b: felt,
+) -> (account_diff_a: felt, account_diff_b: felt){
+    if (b == 0){
+        return (
+            account_diff_a = a,
+            account_diff_b = diff_b,
+        );
+    }else{
+        return (
+            account_diff_a = diff_a,
+            account_diff_b = b,    
+        );
+    }
+}
+
+
 func swap{
     range_check_ptr,
     pedersen_ptr: HashBuiltin*,
@@ -213,6 +247,8 @@ func swap{
         account_id=transaction.account_id,
         diff_a=account_diff_a,
         diff_b=account_diff_b,
+        provided_diff_a=0,
+        provided_diff_b=0,
     );
 
     // Here you should verify the user has signed on a message
@@ -223,7 +259,7 @@ func swap{
     // Compute the new balances of the AMM and make sure they
     // are in range.
     tempvar new_x = x - account_diff_a;
-    tempvar new_y = y + account_diff_b;
+    tempvar new_y = y - account_diff_b;
     assert_nn_le(new_x, MAX_BALANCE);
     assert_nn_le(new_y, MAX_BALANCE);
 
@@ -251,9 +287,118 @@ func swap{
                 f'gave {ids.b} tokens of type token_b and '
                 f'received {ids.diff_a} tokens of type token_a.'
             )
+        print(
+            f'state token_a_balance: {ids.new_state.token_a_balance}\n'
+            f'state token_b_balance: {ids.new_state.token_b_balance}'
+        )
     %}
 
     return (state=new_state);
+}
+
+func provide_liquidity{
+    range_check_ptr,
+    pedersen_ptr: HashBuiltin*,
+    ecdsa_ptr: SignatureBuiltin*
+}(
+    state: AmmState, transaction: SwapTransaction*
+) -> (state: AmmState) {
+    alloc_locals;
+
+    tempvar a = transaction.token_a_amount;
+    tempvar b = transaction.token_b_amount;
+    tempvar x = state.token_a_balance;
+    tempvar y = state.token_b_balance;
+
+    assert a*b = 0;
+
+    let (state) = verify_vote_signature(state, transaction);
+
+    // Check that a is in range.
+    assert_nn_le(a, MAX_BALANCE);
+    assert_nn_le(b, MAX_BALANCE);
+
+    // Compute the amount of token_b the user will get:
+    //   x/y = (x+a)/(y+b)
+    //   => b = y * (x + a) / x - y
+    let (tmp_b, _) = unsigned_div_rem(y * (x + a), x);
+    let (tmp_a, _) = unsigned_div_rem(x * (y + b), y);
+    let diff_a = tmp_a - x;
+    let diff_b = tmp_b - y;
+    // Make sure that b is also in range.
+    if(a == 0){
+        assert_nn_le(diff_b, MAX_BALANCE);
+    }else{
+        assert_nn_le(diff_a, MAX_BALANCE);
+    }
+
+    let (account_diff_a, account_diff_b) = account_diff_provider(a, b, diff_a, diff_b);
+
+    // Update the user's account.
+    let (state, key) = modify_account(
+        state=state,
+        account_id=transaction.account_id,
+        diff_a=-account_diff_a,
+        diff_b=-account_diff_b,
+        provided_diff_a=account_diff_a,
+        provided_diff_b=account_diff_b,
+    );
+
+    // Here you should verify the user has signed on a message
+    // specifying that they would like to sell 'a' tokens of
+    // type token_a. You should use the public key returned by
+    // modify_account().
+
+    // Compute the new balances of the AMM and make sure they
+    // are in range.
+    tempvar new_x = x + account_diff_a;
+    tempvar new_y = y + account_diff_b;
+    assert_nn_le(new_x, MAX_BALANCE);
+    assert_nn_le(new_y, MAX_BALANCE);
+
+    // Update the state.
+    local new_state: AmmState;
+    assert new_state.account_dict_start = (
+        state.account_dict_start
+    );
+    assert new_state.account_dict_end = state.account_dict_end;
+    assert new_state.token_a_balance = new_x;
+    assert new_state.token_b_balance = new_y;
+
+    %{
+        # Print the transaction values using a hint, for
+        # debugging purposes.
+        print(
+            f'Provide Liquidity: Account {ids.transaction.account_id} '
+            f'added {ids.account_diff_a} tokens of type token_a and '
+            f'added {ids.account_diff_b} tokens of type token_b.'
+        )
+        print(
+            f'state token_a_balance: {ids.new_state.token_a_balance}\n'
+            f'state token_b_balance: {ids.new_state.token_b_balance}'
+        )
+    %}
+
+    return (state=new_state);
+}
+
+func swap_or_provide{
+    range_check_ptr,
+    pedersen_ptr: HashBuiltin*,
+    ecdsa_ptr: SignatureBuiltin*
+}(
+    state: AmmState,
+    transaction: SwapTransaction*,
+) -> (state: AmmState) {
+    if(transaction.tx_type == TX_TYPE_EXCHANGE){
+        return swap(
+            state=state, transaction=transaction
+        );
+    }else{
+        return provide_liquidity(
+            state=state, transaction=transaction
+        );
+    }
 }
 
 func transaction_loop{
@@ -270,9 +415,8 @@ func transaction_loop{
     }
 
     let first_transaction: SwapTransaction* = [transactions];
-    let (state) = swap(
-        state=state, transaction=first_transaction
-    );
+
+    let (state) = swap_or_provide(state=state, transaction=first_transaction);
 
     return transaction_loop(
         state=state,
@@ -294,6 +438,12 @@ func hash_account{pedersen_ptr: HashBuiltin*}(
     );
     let (res) = hash2{hash_ptr=pedersen_ptr}(
         res, account.token_b_balance
+    );
+    let (res) = hash2{hash_ptr=pedersen_ptr}(
+        res, account.provided_a_balance
+    );
+    let (res) = hash2{hash_ptr=pedersen_ptr}(
+        res, account.provided_b_balance
     );
     return (res=res);
 }
@@ -360,10 +510,24 @@ func compute_merkle_roots{
                 account + ids.Account.token_a_balance]
             token_b_balance = memory[
                 account + ids.Account.token_b_balance]
+            provided_a_balance = memory[
+                account + ids.Account.provided_a_balance]
+            provided_b_balance = memory[
+                account + ids.Account.provided_b_balance]
             initial_dict[account_id] = pedersen_hash(
-                pedersen_hash(public_key, token_a_balance),
-                token_b_balance)
-    %}
+                    pedersen_hash(
+                        pedersen_hash(
+                            pedersen_hash(
+                                public_key,
+                                token_a_balance
+                            ),
+                            token_b_balance
+                        ),
+                        provided_a_balance
+                    ),
+                    provided_b_balance
+                )
+        %}
     let (local hash_dict_start: DictAccess*) = dict_new();
     let (hash_dict_end) = hash_dict_values(
         dict_start=squashed_dict_start,
@@ -392,6 +556,7 @@ func get_transactions() -> (
     %{
         transactions = [
             [
+                transaction['tx_type'],
                 transaction['account_id'],
                 transaction['token_a_amount'],
                 transaction['token_b_amount'],
@@ -417,6 +582,8 @@ func get_account_dict() -> (account_dict: DictAccess*) {
                 int(info['public_key'], 16),
                 info['token_a_balance'],
                 info['token_b_balance'],
+                info['provided_a_balance'],
+                info['provided_b_balance'],
             ])
             for account_id_str, info in account.items()
         }
