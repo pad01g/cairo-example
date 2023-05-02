@@ -43,6 +43,7 @@ struct AmmState {
 struct SwapTransaction {
     account_id: felt,
     token_a_amount: felt,
+    token_b_amount: felt,
     r: felt,
     s: felt,
 }
@@ -134,7 +135,7 @@ func verify_vote_signature{
 
     // assert signature for swap
     let (message) = hash2{hash_ptr=pedersen_ptr}(
-        x=POLL_ID, y=transaction.token_a_amount
+        x=POLL_ID, y=transaction.token_a_amount * MAX_BALANCE + transaction.token_b_amount
     );
 
     verify_ecdsa_signature(
@@ -155,6 +156,25 @@ func verify_vote_signature{
     return (state=new_state);
 }
 
+func account_diff(
+    a: felt,
+    b: felt,
+    diff_a: felt,
+    diff_b: felt,
+) -> (account_diff_a: felt, account_diff_b: felt){
+    if (b == 0){
+        return (
+            account_diff_a = -a,
+            account_diff_b = diff_b,
+        );
+    }else{
+        return (
+            account_diff_a = diff_a,
+            account_diff_b = -b,    
+        );
+    }
+}
+
 func swap{
     range_check_ptr,
     pedersen_ptr: HashBuiltin*,
@@ -165,26 +185,34 @@ func swap{
     alloc_locals;
 
     tempvar a = transaction.token_a_amount;
+    tempvar b = transaction.token_b_amount;
     tempvar x = state.token_a_balance;
     tempvar y = state.token_b_balance;
+
+    assert a*b = 0;
 
     let (state) = verify_vote_signature(state, transaction);
 
     // Check that a is in range.
     assert_nn_le(a, MAX_BALANCE);
+    assert_nn_le(b, MAX_BALANCE);
 
     // Compute the amount of token_b the user will get:
     //   b = (y * a) / (x + a).
-    let (b, _) = unsigned_div_rem(y * a, x + a);
+    let (diff_b, _) = unsigned_div_rem(y * a, x + a);
+    let (diff_a, _) = unsigned_div_rem(x * b, y + b);
     // Make sure that b is also in range.
-    assert_nn_le(b, MAX_BALANCE);
+    assert_nn_le(diff_a, MAX_BALANCE);
+    assert_nn_le(diff_b, MAX_BALANCE);
+
+    let (account_diff_a, account_diff_b) = account_diff(a, b, diff_a, diff_b);
 
     // Update the user's account.
     let (state, key) = modify_account(
         state=state,
         account_id=transaction.account_id,
-        diff_a=-a,
-        diff_b=b,
+        diff_a=account_diff_a,
+        diff_b=account_diff_b,
     );
 
     // Here you should verify the user has signed on a message
@@ -194,8 +222,8 @@ func swap{
 
     // Compute the new balances of the AMM and make sure they
     // are in range.
-    tempvar new_x = x + a;
-    tempvar new_y = y - b;
+    tempvar new_x = x - account_diff_a;
+    tempvar new_y = y + account_diff_b;
     assert_nn_le(new_x, MAX_BALANCE);
     assert_nn_le(new_y, MAX_BALANCE);
 
@@ -211,10 +239,18 @@ func swap{
     %{
         # Print the transaction values using a hint, for
         # debugging purposes.
-        print(
-            f'Swap: Account {ids.transaction.account_id} '
-            f'gave {ids.a} tokens of type token_a and '
-            f'received {ids.b} tokens of type token_b.')
+        if (ids.b == 0):
+            print(
+                f'Swap: Account {ids.transaction.account_id} '
+                f'gave {ids.a} tokens of type token_a and '
+                f'received {ids.diff_b} tokens of type token_b.'
+            )
+        else:
+            print(
+                f'Swap: Account {ids.transaction.account_id} '
+                f'gave {ids.b} tokens of type token_b and '
+                f'received {ids.diff_a} tokens of type token_a.'
+            )
     %}
 
     return (state=new_state);
@@ -358,6 +394,7 @@ func get_transactions() -> (
             [
                 transaction['account_id'],
                 transaction['token_a_amount'],
+                transaction['token_b_amount'],
                 int(transaction['r'], 16),
                 int(transaction['s'], 16),
             ]
