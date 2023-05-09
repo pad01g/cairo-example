@@ -1,0 +1,728 @@
+{
+    "attributes": [
+        {
+            "accessible_scopes": [
+                "__main__",
+                "__main__.inverse"
+            ],
+            "end_pc": 9,
+            "flow_tracking_data": {
+                "ap_tracking": {
+                    "group": 1,
+                    "offset": 0
+                },
+                "reference_ids": {
+                    "__main__.inverse.x": 1
+                }
+            },
+            "name": "error_message",
+            "start_pc": 5,
+            "value": "x must not be zero. Got x={x}."
+        },
+        {
+            "accessible_scopes": [
+                "__main__",
+                "__main__.assert_not_equal"
+            ],
+            "end_pc": 12,
+            "flow_tracking_data": {
+                "ap_tracking": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "reference_ids": {
+                    "__main__.assert_not_equal.a": 3,
+                    "__main__.assert_not_equal.b": 4,
+                    "__main__.assert_not_equal.diff": 5
+                }
+            },
+            "name": "error_message",
+            "start_pc": 9,
+            "value": "a and b must be distinct."
+        }
+    ],
+    "builtins": [],
+    "compiler_version": "0.11.0.1",
+    "data": [
+        "0x20780017fff7ffd",
+        "0x4",
+        "0x400780017fff7ffd",
+        "0x1",
+        "0x208b7fff7fff7ffe",
+        "0x480680017fff8000",
+        "0x1",
+        "0x48487ffd80007fff",
+        "0x208b7fff7fff7ffe",
+        "0x48297ffd80007ffc",
+        "0x1104800180018000",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffffc",
+        "0x208b7fff7fff7ffe",
+        "0x480680017fff8000",
+        "0x1",
+        "0x480680017fff8000",
+        "0x1",
+        "0x1104800180018000",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffff9",
+        "0x208b7fff7fff7ffe"
+    ],
+    "debug_info": {
+        "file_contents": {},
+        "instruction_locations": {
+            "0": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.math",
+                    "starkware.cairo.common.math.assert_not_zero"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.math.assert_not_zero.value": 0
+                    }
+                },
+                "hints": [
+                    {
+                        "location": {
+                            "end_col": 7,
+                            "end_line": 11,
+                            "input_file": {
+                                "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/math.cairo"
+                            },
+                            "start_col": 5,
+                            "start_line": 7
+                        },
+                        "n_prefix_newlines": 1
+                    }
+                ],
+                "inst": {
+                    "end_col": 7,
+                    "end_line": 12,
+                    "input_file": {
+                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/math.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 12
+                }
+            },
+            "2": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.math",
+                    "starkware.cairo.common.math.assert_not_zero"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.math.assert_not_zero.value": 0
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 18,
+                    "end_line": 14,
+                    "input_file": {
+                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/math.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 14
+                }
+            },
+            "4": {
+                "accessible_scopes": [
+                    "starkware.cairo.common.math",
+                    "starkware.cairo.common.math.assert_not_zero"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.math.assert_not_zero.value": 0
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 17,
+                    "input_file": {
+                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/math.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 17
+                }
+            },
+            "5": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.inverse"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 1,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.inverse.x": 1
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 22,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 21,
+                    "start_line": 5
+                }
+            },
+            "7": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.inverse"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 1,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.inverse.__temp0": 2,
+                        "__main__.inverse.x": 1
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 26,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 21,
+                    "start_line": 5
+                }
+            },
+            "8": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.inverse"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 1,
+                        "offset": 2
+                    },
+                    "reference_ids": {
+                        "__main__.inverse.__temp0": 2,
+                        "__main__.inverse.x": 1
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 28,
+                    "end_line": 5,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 5
+                }
+            },
+            "9": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.assert_not_equal"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.assert_not_equal.a": 3,
+                        "__main__.assert_not_equal.b": 4,
+                        "__main__.assert_not_equal.diff": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 21,
+                    "end_line": 10,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 21,
+                            "end_line": 12,
+                            "input_file": {
+                                "filename": "scope-attributes.cairo"
+                            },
+                            "start_col": 17,
+                            "start_line": 12
+                        },
+                        "While expanding the reference 'diff' in:"
+                    ],
+                    "start_col": 16,
+                    "start_line": 10
+                }
+            },
+            "10": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.assert_not_equal"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 1
+                    },
+                    "reference_ids": {
+                        "__main__.assert_not_equal.a": 3,
+                        "__main__.assert_not_equal.b": 4,
+                        "__main__.assert_not_equal.diff": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 22,
+                    "end_line": 12,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 12
+                }
+            },
+            "12": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.assert_not_equal"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 2,
+                        "offset": 5
+                    },
+                    "reference_ids": {
+                        "__main__.assert_not_equal.a": 3,
+                        "__main__.assert_not_equal.b": 4,
+                        "__main__.assert_not_equal.diff": 5
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 15,
+                    "end_line": 14,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 14
+                }
+            },
+            "13": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 0
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 23,
+                    "end_line": 19,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 22,
+                    "start_line": 19
+                }
+            },
+            "15": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 1
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 26,
+                    "end_line": 19,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 25,
+                    "start_line": 19
+                }
+            },
+            "17": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 2
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 27,
+                    "end_line": 19,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 19
+                }
+            },
+            "19": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 3,
+                        "offset": 9
+                    },
+                    "reference_ids": {}
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 8,
+                    "end_line": 20,
+                    "input_file": {
+                        "filename": "scope-attributes.cairo"
+                    },
+                    "start_col": 5,
+                    "start_line": 20
+                }
+            }
+        }
+    },
+    "hints": {
+        "0": [
+            {
+                "accessible_scopes": [
+                    "starkware.cairo.common.math",
+                    "starkware.cairo.common.math.assert_not_zero"
+                ],
+                "code": "from starkware.cairo.common.math_utils import assert_integer\nassert_integer(ids.value)\nassert ids.value % PRIME != 0, f'assert_not_zero failed: {ids.value} = 0.'",
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "starkware.cairo.common.math.assert_not_zero.value": 0
+                    }
+                }
+            }
+        ]
+    },
+    "identifiers": {
+        "__main__.assert_not_equal": {
+            "decorators": [],
+            "pc": 9,
+            "type": "function"
+        },
+        "__main__.assert_not_equal.Args": {
+            "full_name": "__main__.assert_not_equal.Args",
+            "members": {
+                "a": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                },
+                "b": {
+                    "cairo_type": "felt",
+                    "offset": 1
+                }
+            },
+            "size": 2,
+            "type": "struct"
+        },
+        "__main__.assert_not_equal.ImplicitArgs": {
+            "full_name": "__main__.assert_not_equal.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.assert_not_equal.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "__main__.assert_not_equal.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "__main__.assert_not_equal.a": {
+            "cairo_type": "felt",
+            "full_name": "__main__.assert_not_equal.a",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "pc": 9,
+                    "value": "[cast(fp + (-4), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.assert_not_equal.b": {
+            "cairo_type": "felt",
+            "full_name": "__main__.assert_not_equal.b",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "pc": 9,
+                    "value": "[cast(fp + (-3), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.assert_not_equal.diff": {
+            "cairo_type": "felt",
+            "full_name": "__main__.assert_not_equal.diff",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 2,
+                        "offset": 0
+                    },
+                    "pc": 9,
+                    "value": "cast([fp + (-4)] - [fp + (-3)], felt)"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.assert_not_zero": {
+            "destination": "starkware.cairo.common.math.assert_not_zero",
+            "type": "alias"
+        },
+        "__main__.inverse": {
+            "decorators": [],
+            "pc": 5,
+            "type": "function"
+        },
+        "__main__.inverse.Args": {
+            "full_name": "__main__.inverse.Args",
+            "members": {
+                "x": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "__main__.inverse.ImplicitArgs": {
+            "full_name": "__main__.inverse.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.inverse.Return": {
+            "cairo_type": "(res: felt)",
+            "type": "type_definition"
+        },
+        "__main__.inverse.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "__main__.inverse.__temp0": {
+            "cairo_type": "felt",
+            "full_name": "__main__.inverse.__temp0",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 1,
+                        "offset": 1
+                    },
+                    "pc": 7,
+                    "value": "[cast(ap + (-1), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.inverse.x": {
+            "cairo_type": "felt",
+            "full_name": "__main__.inverse.x",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 1,
+                        "offset": 0
+                    },
+                    "pc": 5,
+                    "value": "[cast(fp + (-3), felt*)]"
+                }
+            ],
+            "type": "reference"
+        },
+        "__main__.main": {
+            "decorators": [],
+            "pc": 13,
+            "type": "function"
+        },
+        "__main__.main.Args": {
+            "full_name": "__main__.main.Args",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.main.ImplicitArgs": {
+            "full_name": "__main__.main.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "__main__.main.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "__main__.main.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "starkware.cairo.common.bool.FALSE": {
+            "type": "const",
+            "value": 0
+        },
+        "starkware.cairo.common.bool.TRUE": {
+            "type": "const",
+            "value": 1
+        },
+        "starkware.cairo.common.math.FALSE": {
+            "destination": "starkware.cairo.common.bool.FALSE",
+            "type": "alias"
+        },
+        "starkware.cairo.common.math.TRUE": {
+            "destination": "starkware.cairo.common.bool.TRUE",
+            "type": "alias"
+        },
+        "starkware.cairo.common.math.assert_not_zero": {
+            "decorators": [],
+            "pc": 0,
+            "type": "function"
+        },
+        "starkware.cairo.common.math.assert_not_zero.Args": {
+            "full_name": "starkware.cairo.common.math.assert_not_zero.Args",
+            "members": {
+                "value": {
+                    "cairo_type": "felt",
+                    "offset": 0
+                }
+            },
+            "size": 1,
+            "type": "struct"
+        },
+        "starkware.cairo.common.math.assert_not_zero.ImplicitArgs": {
+            "full_name": "starkware.cairo.common.math.assert_not_zero.ImplicitArgs",
+            "members": {},
+            "size": 0,
+            "type": "struct"
+        },
+        "starkware.cairo.common.math.assert_not_zero.Return": {
+            "cairo_type": "()",
+            "type": "type_definition"
+        },
+        "starkware.cairo.common.math.assert_not_zero.SIZEOF_LOCALS": {
+            "type": "const",
+            "value": 0
+        },
+        "starkware.cairo.common.math.assert_not_zero.value": {
+            "cairo_type": "felt",
+            "full_name": "starkware.cairo.common.math.assert_not_zero.value",
+            "references": [
+                {
+                    "ap_tracking_data": {
+                        "group": 0,
+                        "offset": 0
+                    },
+                    "pc": 0,
+                    "value": "[cast(fp + (-3), felt*)]"
+                }
+            ],
+            "type": "reference"
+        }
+    },
+    "main_scope": "__main__",
+    "prime": "0x800000000000011000000000000000000000000000000000000000000000001",
+    "reference_manager": {
+        "references": [
+            {
+                "ap_tracking_data": {
+                    "group": 0,
+                    "offset": 0
+                },
+                "pc": 0,
+                "value": "[cast(fp + (-3), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 1,
+                    "offset": 0
+                },
+                "pc": 5,
+                "value": "[cast(fp + (-3), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 1,
+                    "offset": 1
+                },
+                "pc": 7,
+                "value": "[cast(ap + (-1), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "pc": 9,
+                "value": "[cast(fp + (-4), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "pc": 9,
+                "value": "[cast(fp + (-3), felt*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 2,
+                    "offset": 0
+                },
+                "pc": 9,
+                "value": "cast([fp + (-4)] - [fp + (-3)], felt)"
+            }
+        ]
+    }
+}
