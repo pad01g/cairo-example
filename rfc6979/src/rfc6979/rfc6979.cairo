@@ -5,6 +5,11 @@ from crypto.secp256k1_ecdsa import verify_ecdsa_secp256k1
 from starkware.cairo.common.uint256 import Uint256
 from starkware.cairo.common.cairo_secp.bigint import BigInt3, uint256_to_bigint
 from starkware.cairo.common.cairo_secp.ec import EcPoint, ec_add, ec_mul
+from starkware.cairo.common.cairo_secp.signature import (
+    validate_signature_entry,
+    get_generator_point,
+    // div_mod_n,
+)
 from starkware.cairo.common.cairo_builtins import BitwiseBuiltin
 
 // (1) (R,S) verifies for Q and m
@@ -28,8 +33,24 @@ func main{
     let (z) = uint256_to_bigint( Uint256(0xc2b6f2c9b0343c945fbbfe08247a4cbe, 0x9e5755ec2f328cc8635a55415d0e9a09) );
     verify_ecdsa_secp256k1(pt, z, r, s);
     
+    local d_low;
+    local d_high;
+    %{
+        ids.d_low = int(program_input["d_low"], 16)
+        ids.d_high = int(program_input["d_high"], 16)
+    %}
+    let (d) = uint256_to_bigint( Uint256(d_low, d_high) );
+
     // (2)
+
+
     // (3)
+    let (gen_pt: EcPoint) = get_generator_point();
+    with_attr error_message("Invalid key pair.") {
+        let (gen_d: EcPoint) = ec_mul(gen_pt, d);
+        assert pt.x = gen_d.x;
+        // assert pt.y = gen_d.y;
+    }
 
     return ();
 }

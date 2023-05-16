@@ -1,5 +1,5 @@
 from secp256k1 import PrivateKey, PublicKey
-import pprint
+import pprint, json
 
 key = '31a84594060e103f5a63eb742bd46cf5f5900d8406e2726dedfc61c7cf43ebad'
 msg = '9e5755ec2f328cc8635a55415d0e9a09c2b6f2c9b0343c945fbbfe08247a4cbe'
@@ -46,3 +46,13 @@ pprint.pprint({
 #  'sig_r_2': '0x276325f4cbe8169fc53ade4a407c2fc8',
 #  'sig_s_1': '0x4d86fbe3bde6975dd5a91fdc95ad6544',
 #  'sig_s_2': '0xdcdf0dab206f02224ce7e2b151bd82ab'}
+
+# Write the data (public keys and votes) to a JSON file.
+input_data = {
+    'd_high': "0x" + privkey_ser[0:16].hex(),
+    'd_low': "0x" + privkey_ser[16:32].hex(),
+}
+
+with open('rfc6979-input.json', 'w') as f:
+    json.dump(input_data, f, indent=4)
+    f.write('\n')
