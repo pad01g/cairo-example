@@ -17,15 +17,15 @@ func main{
     alloc_locals;
 
     // (1)
-
-    let (x_as_bigint3) = uint256_to_bigint(Uint256(0xcfd5e9ad6175dec240d9f76e20b48b41, 0xbff381888b165f92dd33d09ff2cde2d4));
-    let (y_as_bigint3) = uint256_to_bigint(Uint256(0x2e36f7acc2d711d8fb6fbbf53986b57f, 0xe4be2a8547d802dc42041b95be5934e3));
+    // Uint256(lower 16 bytes, higher 16 bytes)
+    let (x_as_bigint3) = uint256_to_bigint(Uint256(0x42c9a29bf31c931154eb331c21b6f6fd, 0x087602e71a82777a7a9c234b668a1dc9));
+    let (y_as_bigint3) = uint256_to_bigint(Uint256(0xf46848d3adb535acf74ca9a2558d2026, 0x519fa81e6550cf453164c45a1e968ad7));
 
     let pt = EcPoint(x_as_bigint3, y_as_bigint3);
 
-    let (r) = uint256_to_bigint( Uint256(0x770f9700f1ae6c77fee73f3ac9be1217, 0xeee3e6f50c576c07d7e4afc302c486b0) );
-    let (s) = uint256_to_bigint( Uint256(0xcc3509cf420a4b46d3c5e24cda81f22, 0x541e10c21560da25ada4c259efe25609) );
-    let (z) = uint256_to_bigint( Uint256(0xbfc5faa0e178a23ca66202c8c2a72277, 0xca1ad489ab60ea581e6c119cc39d94dd) );
+    let (r) = uint256_to_bigint( Uint256(0x276325f4cbe8169fc53ade4a407c2fc8, 0x132382ca59240c2e14ee7ff61d90fc63) );
+    let (s) = uint256_to_bigint( Uint256(0xdcdf0dab206f02224ce7e2b151bd82ab, 0x4d86fbe3bde6975dd5a91fdc95ad6544) );
+    let (z) = uint256_to_bigint( Uint256(0xc2b6f2c9b0343c945fbbfe08247a4cbe, 0x9e5755ec2f328cc8635a55415d0e9a09) );
     verify_ecdsa_secp256k1(pt, z, r, s);
     
     // (2)
