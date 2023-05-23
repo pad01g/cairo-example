@@ -33,3 +33,9 @@ https://github.com/facebook/winterfell
 $ python3 rfc6979.py
 $ export name=rfc6979; cairo-compile src/$name/$name.cairo --output $name.json --cairo_path src && cairo-run --program=$name.json --print_output --layout=dynamic  --print_info --trace_file=$name-trace.bin --memory_file=$name-memory.bin  --debug_error  --program_input=$name-input.json
 ```
+
+# see also
+
+ - https://medium.com/blockstream/anti-exfil-stopping-key-exfiltration-589f02facc2e
+
+ - https://eprint.iacr.org/2020/1057.pdf
