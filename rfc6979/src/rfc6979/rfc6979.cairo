@@ -22,8 +22,8 @@ from starkware.cairo.common.math import split_felt
 //
 func felt_to_uint256{range_check_ptr}(value) -> Uint256 {
     let (high, low) = split_felt(value);
-    let value256 = Uint256(high, low);
-    // let value256 = Uint256(low, high);
+    // let value256 = Uint256(high, low);
+    let value256 = Uint256(low, high);
     return value256;
 }
 
@@ -44,8 +44,8 @@ func main{
 
     let pt = EcPoint(x_as_bigint3, y_as_bigint3);
 
-    let (r) = uint256_to_bigint( Uint256(0x492e341294025332d41a6cdd9fa01b1c, 0xf649260ca357bc6b3eceac8533f148c2) );
-    let (s) = uint256_to_bigint( Uint256(0x34501a2fa2d2a499e43502e6493ac220, 0x60560681be0c75043cc27fb5ee753b46) );
+    let (r) = uint256_to_bigint( Uint256(0x09fdf69663b19a521bbd35c86d4f4421, 0xbc747713550ea46bb31a717534e8da25) );
+    let (s) = uint256_to_bigint( Uint256(0x9a02a5aca162110cd3acc06c81403413, 0x2c338d898fa93d7c0230d1337d3c7850) );
     let msg_low = 0xc2b6f2c9b0343c945fbbfe08247a4cbe;
     let msg_high = 0x9e5755ec2f328cc8635a55415d0e9a09;
     let (z) = uint256_to_bigint( Uint256(msg_low, msg_high) );
@@ -77,21 +77,24 @@ func main{
     let (n) = uint256_to_bigint(n_uint256);
 
     %{
-        print("nonce", ids.nonce)
+        print("nonce", hex(ids.nonce), ids.nonce)
         print("n", ids.n)
-        print("n_uint256.low", ids.n_uint256.low)
-        print("n_uint256.high", ids.n_uint256.high)
+        print("n.d0", hex(ids.n.d0), ids.n.d0)
+        print("n.d1", hex(ids.n.d1), ids.n.d1)
+        print("n.d2", hex(ids.n.d2), ids.n.d2)
+        print("n_uint256.low", hex(ids.n_uint256.low), ids.n_uint256.low)
+        print("n_uint256.high", hex(ids.n_uint256.high), ids.n_uint256.high)
     %}
 
     with_attr error_message("Invalid nonce.") {
         let (gen_n: EcPoint) = ec_mul(gen_pt, n);
         %{
-            print("r.d0", ids.r.d0)
-            print("r.d1", ids.r.d1)
-            print("r.d2", ids.r.d2)
-            print("gen_n.x.d0", ids.gen_n.x.d0)
-            print("gen_n.x.d1", ids.gen_n.x.d1)
-            print("gen_n.x.d2", ids.gen_n.x.d2)
+            print("r.d0", hex(ids.r.d0), ids.r.d0)
+            print("r.d1", hex(ids.r.d1), ids.r.d1)
+            print("r.d2", hex(ids.r.d2), ids.r.d2)
+            print("gen_n.x.d0", hex(ids.gen_n.x.d0), ids.gen_n.x.d0)
+            print("gen_n.x.d1", hex(ids.gen_n.x.d1), ids.gen_n.x.d1)
+            print("gen_n.x.d2", hex(ids.gen_n.x.d2), ids.gen_n.x.d2)
         %}
         assert r = gen_n.x;
     }

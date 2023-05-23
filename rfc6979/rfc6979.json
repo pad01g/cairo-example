@@ -76,11 +76,11 @@
                 "__main__",
                 "__main__.main"
             ],
-            "end_pc": 1017,
+            "end_pc": 1020,
             "flow_tracking_data": {
                 "ap_tracking": {
                     "group": 46,
-                    "offset": 154
+                    "offset": 157
                 },
                 "reference_ids": {
                     "__main__.main.bitwise_ptr": 304,
@@ -106,7 +106,7 @@
                 }
             },
             "name": "error_message",
-            "start_pc": 1002,
+            "start_pc": 1005,
             "value": "Invalid nonce."
         },
         {
@@ -114,7 +114,7 @@
                 "__main__",
                 "__main__.main"
             ],
-            "end_pc": 1032,
+            "end_pc": 1035,
             "flow_tracking_data": {
                 "ap_tracking": {
                     "group": 47,
@@ -145,7 +145,7 @@
                 }
             },
             "name": "error_message",
-            "start_pc": 1017,
+            "start_pc": 1020,
             "value": "Invalid key pair."
         }
     ],
@@ -1054,6 +1054,9 @@
         "0x480a7ffd7fff8000",
         "0x1104800180018000",
         "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc9b",
+        "0x48127ffd7fff8000",
+        "0x48127ffe7fff8000",
+        "0x48127ffc7fff8000",
         "0x208b7fff7fff7ffe",
         "0x40780017fff7fff",
         "0x15",
@@ -1063,14 +1066,14 @@
         "0x480680017fff8000",
         "0x87602e71a82777a7a9c234b668a1dc9",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcd7",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcd4",
         "0x48127ffc7fff8000",
         "0x480680017fff8000",
         "0xf46848d3adb535acf74ca9a2558d2026",
         "0x480680017fff8000",
         "0x519fa81e6550cf453164c45a1e968ad7",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcd0",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffccd",
         "0x40137fc97fff8000",
         "0x40137fca7fff8001",
         "0x40137fcb7fff8002",
@@ -1079,28 +1082,28 @@
         "0x40137fff7fff8005",
         "0x48127ffc7fff8000",
         "0x480680017fff8000",
-        "0x492e341294025332d41a6cdd9fa01b1c",
+        "0x9fdf69663b19a521bbd35c86d4f4421",
         "0x480680017fff8000",
-        "0xf649260ca357bc6b3eceac8533f148c2",
+        "0xbc747713550ea46bb31a717534e8da25",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcc3",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcc0",
         "0x40137ffd7fff8006",
         "0x40137ffe7fff8007",
         "0x40137fff7fff8008",
         "0x48127ffc7fff8000",
         "0x480680017fff8000",
-        "0x34501a2fa2d2a499e43502e6493ac220",
+        "0x9a02a5aca162110cd3acc06c81403413",
         "0x480680017fff8000",
-        "0x60560681be0c75043cc27fb5ee753b46",
+        "0x2c338d898fa93d7c0230d1337d3c7850",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcb9",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcb6",
         "0x48127ffc7fff8000",
         "0x480680017fff8000",
         "0xc2b6f2c9b0343c945fbbfe08247a4cbe",
         "0x480680017fff8000",
         "0x9e5755ec2f328cc8635a55415d0e9a09",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcb2",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcaf",
         "0x48127ffc7fff8000",
         "0x480a80007fff8000",
         "0x480a80017fff8000",
@@ -1118,16 +1121,16 @@
         "0x48127fbc7fff8000",
         "0x48127fbc7fff8000",
         "0x1104800180018000",
-        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff62",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff5f",
         "0x480a80097fff8000",
         "0x480a800a7fff8000",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc9c",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc99",
         "0x40137ffd7fff800b",
         "0x40137ffe7fff800c",
         "0x40137fff7fff800d",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffeda",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffed7",
         "0x40137ffa7fff800e",
         "0x40137ffb7fff800f",
         "0x40137ffc7fff8010",
@@ -1140,24 +1143,24 @@
         "0x480680017fff8000",
         "0xc2b6f2c9b0343c945fbbfe08247a4cbe",
         "0x1104800180018000",
-        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffffa2",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff9f",
         "0x48127ffe7fff8000",
         "0x480a800a7fff8000",
         "0x480a80097fff8000",
         "0x1104800180018000",
-        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff9d",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff9a",
         "0x48127ffe7fff8000",
         "0x48127ff77fff8000",
         "0x48127ffd7fff8000",
         "0x1104800180018000",
-        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff98",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff95",
         "0x40137ffe7fff8014",
         "0x48127fdf7fff8000",
         "0x48127ffe7fff8000",
         "0x1104800180018000",
-        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff99",
+        "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff96",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc79",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffc76",
         "0x48127ffc7fff8000",
         "0x480a800e7fff8000",
         "0x480a800f7fff8000",
@@ -1169,7 +1172,7 @@
         "0x48127ff67fff8000",
         "0x48127ff67fff8000",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe60",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe5d",
         "0x40137ffa7fff8006",
         "0x40137ffb7fff8007",
         "0x40137ffc7fff8008",
@@ -1184,7 +1187,7 @@
         "0x480a800c7fff8000",
         "0x480a800d7fff8000",
         "0x1104800180018000",
-        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe51",
+        "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe4e",
         "0x40137ffa7fff8000",
         "0x40137ffb7fff8001",
         "0x40137ffc7fff8002",
@@ -29529,6 +29532,177 @@
                 },
                 "hints": [],
                 "inst": {
+                    "end_col": 32,
+                    "end_line": 124,
+                    "input_file": {
+                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/math.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 40,
+                            "end_line": 24,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 37,
+                                    "end_line": 23,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "parent_location": [
+                                        {
+                                            "end_col": 21,
+                                            "end_line": 27,
+                                            "input_file": {
+                                                "filename": "src/rfc6979/rfc6979.cairo"
+                                            },
+                                            "start_col": 5,
+                                            "start_line": 27
+                                        },
+                                        "While trying to retrieve the implicit argument 'range_check_ptr' in:"
+                                    ],
+                                    "start_col": 22,
+                                    "start_line": 23
+                                },
+                                "While expanding the reference 'range_check_ptr' in:"
+                            ],
+                            "start_col": 23,
+                            "start_line": 24
+                        },
+                        "While trying to update the implicit return value 'range_check_ptr' in:"
+                    ],
+                    "start_col": 17,
+                    "start_line": 124
+                }
+            },
+            "899": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.felt_to_uint256"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 44,
+                        "offset": 22
+                    },
+                    "reference_ids": {
+                        "__main__.felt_to_uint256.high": 299,
+                        "__main__.felt_to_uint256.low": 300,
+                        "__main__.felt_to_uint256.range_check_ptr": 298,
+                        "__main__.felt_to_uint256.value": 296,
+                        "__main__.felt_to_uint256.value256": 301
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 19,
+                    "end_line": 24,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 31,
+                            "end_line": 26,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 20,
+                                    "end_line": 27,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "start_col": 12,
+                                    "start_line": 27
+                                },
+                                "While expanding the reference 'value256' in:"
+                            ],
+                            "start_col": 28,
+                            "start_line": 26
+                        },
+                        "While expanding the reference 'low' in:"
+                    ],
+                    "start_col": 16,
+                    "start_line": 24
+                }
+            },
+            "900": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.felt_to_uint256"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 44,
+                        "offset": 23
+                    },
+                    "reference_ids": {
+                        "__main__.felt_to_uint256.high": 299,
+                        "__main__.felt_to_uint256.low": 300,
+                        "__main__.felt_to_uint256.range_check_ptr": 298,
+                        "__main__.felt_to_uint256.value": 296,
+                        "__main__.felt_to_uint256.value256": 301
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 14,
+                    "end_line": 24,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 37,
+                            "end_line": 26,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "parent_location": [
+                                {
+                                    "end_col": 20,
+                                    "end_line": 27,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "start_col": 12,
+                                    "start_line": 27
+                                },
+                                "While expanding the reference 'value256' in:"
+                            ],
+                            "start_col": 33,
+                            "start_line": 26
+                        },
+                        "While expanding the reference 'high' in:"
+                    ],
+                    "start_col": 10,
+                    "start_line": 24
+                }
+            },
+            "901": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.felt_to_uint256"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 44,
+                        "offset": 24
+                    },
+                    "reference_ids": {
+                        "__main__.felt_to_uint256.high": 299,
+                        "__main__.felt_to_uint256.low": 300,
+                        "__main__.felt_to_uint256.range_check_ptr": 298,
+                        "__main__.felt_to_uint256.value": 296,
+                        "__main__.felt_to_uint256.value256": 301
+                    }
+                },
+                "hints": [],
+                "inst": {
                     "end_col": 21,
                     "end_line": 27,
                     "input_file": {
@@ -29538,7 +29712,7 @@
                     "start_line": 27
                 }
             },
-            "899": {
+            "902": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29565,7 +29739,7 @@
                     "start_line": 38
                 }
             },
-            "901": {
+            "904": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29616,7 +29790,7 @@
                     "start_line": 35
                 }
             },
-            "902": {
+            "905": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29643,7 +29817,7 @@
                     "start_line": 42
                 }
             },
-            "904": {
+            "907": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29670,7 +29844,7 @@
                     "start_line": 42
                 }
             },
-            "906": {
+            "909": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29697,7 +29871,7 @@
                     "start_line": 42
                 }
             },
-            "908": {
+            "911": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29761,7 +29935,7 @@
                     "start_line": 119
                 }
             },
-            "909": {
+            "912": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29789,7 +29963,7 @@
                     "start_line": 43
                 }
             },
-            "911": {
+            "914": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29817,7 +29991,7 @@
                     "start_line": 43
                 }
             },
-            "913": {
+            "916": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -29843,132 +30017,6 @@
                     },
                     "start_col": 26,
                     "start_line": 43
-                }
-            },
-            "915": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 125
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 309,
-                        "__main__.main.range_check_ptr": 307,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 45,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 45,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 9,
-                            "start_line": 45
-                        },
-                        "While auto generating local variable for 'pt'."
-                    ],
-                    "start_col": 9,
-                    "start_line": 45
-                }
-            },
-            "916": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 125
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 309,
-                        "__main__.main.range_check_ptr": 307,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 45,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 45,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 9,
-                            "start_line": 45
-                        },
-                        "While auto generating local variable for 'pt'."
-                    ],
-                    "start_col": 9,
-                    "start_line": 45
-                }
-            },
-            "917": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 125
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 309,
-                        "__main__.main.range_check_ptr": 307,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 45,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 45,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 9,
-                            "start_line": 45
-                        },
-                        "While auto generating local variable for 'pt'."
-                    ],
-                    "start_col": 9,
-                    "start_line": 45
                 }
             },
             "918": {
@@ -30110,6 +30158,132 @@
                     "reference_ids": {
                         "__main__.main.bitwise_ptr": 304,
                         "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 309,
+                        "__main__.main.range_check_ptr": 307,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 45,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 45,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 9,
+                            "start_line": 45
+                        },
+                        "While auto generating local variable for 'pt'."
+                    ],
+                    "start_col": 9,
+                    "start_line": 45
+                }
+            },
+            "922": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 125
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 309,
+                        "__main__.main.range_check_ptr": 307,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 45,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 45,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 9,
+                            "start_line": 45
+                        },
+                        "While auto generating local variable for 'pt'."
+                    ],
+                    "start_col": 9,
+                    "start_line": 45
+                }
+            },
+            "923": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 125
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 309,
+                        "__main__.main.range_check_ptr": 307,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 45,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 45,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 9,
+                            "start_line": 45
+                        },
+                        "While auto generating local variable for 'pt'."
+                    ],
+                    "start_col": 9,
+                    "start_line": 45
+                }
+            },
+            "924": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 125
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
                         "__main__.main.pt": 310,
                         "__main__.main.range_check_ptr": 307,
                         "__main__.main.x_as_bigint3": 306,
@@ -30163,7 +30337,7 @@
                     "start_line": 119
                 }
             },
-            "922": {
+            "925": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30193,7 +30367,7 @@
                     "start_line": 47
                 }
             },
-            "924": {
+            "927": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30223,7 +30397,7 @@
                     "start_line": 47
                 }
             },
-            "926": {
+            "929": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30253,136 +30427,136 @@
                     "start_line": 47
                 }
             },
-            "928": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 177
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 312,
-                        "__main__.main.range_check_ptr": 311,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 47,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 47,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 47
-                        },
-                        "While auto generating local variable for 'r'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 47
-                }
-            },
-            "929": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 177
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 312,
-                        "__main__.main.range_check_ptr": 311,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 47,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 47,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 47
-                        },
-                        "While auto generating local variable for 'r'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 47
-                }
-            },
-            "930": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 45,
-                        "offset": 177
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 312,
-                        "__main__.main.range_check_ptr": 311,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 47,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 47,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 47
-                        },
-                        "While auto generating local variable for 'r'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 47
-                }
-            },
             "931": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 177
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 312,
+                        "__main__.main.range_check_ptr": 311,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 47,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 47,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 47
+                        },
+                        "While auto generating local variable for 'r'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 47
+                }
+            },
+            "932": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 177
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 312,
+                        "__main__.main.range_check_ptr": 311,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 47,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 47,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 47
+                        },
+                        "While auto generating local variable for 'r'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 47
+                }
+            },
+            "933": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 45,
+                        "offset": 177
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 312,
+                        "__main__.main.range_check_ptr": 311,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 47,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 47,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 47
+                        },
+                        "While auto generating local variable for 'r'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 47
+                }
+            },
+            "934": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30449,7 +30623,7 @@
                     "start_line": 119
                 }
             },
-            "932": {
+            "935": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30480,7 +30654,7 @@
                     "start_line": 48
                 }
             },
-            "934": {
+            "937": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30511,7 +30685,7 @@
                     "start_line": 48
                 }
             },
-            "936": {
+            "939": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30542,7 +30716,7 @@
                     "start_line": 48
                 }
             },
-            "938": {
+            "941": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30612,7 +30786,7 @@
                     "start_line": 119
                 }
             },
-            "939": {
+            "942": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30658,7 +30832,7 @@
                     "start_line": 49
                 }
             },
-            "941": {
+            "944": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30704,7 +30878,7 @@
                     "start_line": 50
                 }
             },
-            "943": {
+            "946": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30738,7 +30912,7 @@
                     "start_line": 51
                 }
             },
-            "945": {
+            "948": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30809,7 +30983,7 @@
                     "start_line": 119
                 }
             },
-            "946": {
+            "949": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30868,7 +31042,7 @@
                     "start_line": 45
                 }
             },
-            "947": {
+            "950": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30927,7 +31101,7 @@
                     "start_line": 45
                 }
             },
-            "948": {
+            "951": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -30986,7 +31160,7 @@
                     "start_line": 45
                 }
             },
-            "949": {
+            "952": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31045,7 +31219,7 @@
                     "start_line": 45
                 }
             },
-            "950": {
+            "953": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31104,7 +31278,7 @@
                     "start_line": 45
                 }
             },
-            "951": {
+            "954": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31163,7 +31337,7 @@
                     "start_line": 45
                 }
             },
-            "952": {
+            "955": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31210,7 +31384,7 @@
                     "start_line": 51
                 }
             },
-            "953": {
+            "956": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31257,7 +31431,7 @@
                     "start_line": 51
                 }
             },
-            "954": {
+            "957": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31304,7 +31478,7 @@
                     "start_line": 51
                 }
             },
-            "955": {
+            "958": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31363,7 +31537,7 @@
                     "start_line": 47
                 }
             },
-            "956": {
+            "959": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31422,7 +31596,7 @@
                     "start_line": 47
                 }
             },
-            "957": {
+            "960": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31481,7 +31655,7 @@
                     "start_line": 47
                 }
             },
-            "958": {
+            "961": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31528,7 +31702,7 @@
                     "start_line": 48
                 }
             },
-            "959": {
+            "962": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31575,7 +31749,7 @@
                     "start_line": 48
                 }
             },
-            "960": {
+            "963": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31622,7 +31796,7 @@
                     "start_line": 48
                 }
             },
-            "961": {
+            "964": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31657,7 +31831,7 @@
                     "start_line": 52
                 }
             },
-            "963": {
+            "966": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31719,7 +31893,7 @@
                     "start_line": 55
                 }
             },
-            "964": {
+            "967": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31768,7 +31942,7 @@
                     "start_line": 56
                 }
             },
-            "965": {
+            "968": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31805,157 +31979,157 @@
                     "start_line": 61
                 }
             },
-            "967": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 51
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 324,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 61,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 61,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 61
-                        },
-                        "While auto generating local variable for 'd'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 61
-                }
-            },
-            "968": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 51
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 324,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 61,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 61,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 61
-                        },
-                        "While auto generating local variable for 'd'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 61
-                }
-            },
-            "969": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 51
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 324,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 11,
-                    "end_line": 61,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 11,
-                            "end_line": 61,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 61
-                        },
-                        "While auto generating local variable for 'd'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 61
-                }
-            },
             "970": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 51
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 324,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 61,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 61,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 61
+                        },
+                        "While auto generating local variable for 'd'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 61
+                }
+            },
+            "971": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 51
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 324,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 61,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 61,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 61
+                        },
+                        "While auto generating local variable for 'd'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 61
+                }
+            },
+            "972": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 51
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 324,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 61,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 11,
+                            "end_line": 61,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 61
+                        },
+                        "While auto generating local variable for 'd'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 61
+                }
+            },
+            "973": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -31990,159 +32164,6 @@
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 29,
-                    "start_line": 62
-                }
-            },
-            "972": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 59
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 326,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 25,
-                            "end_line": 62,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 62
-                        },
-                        "While auto generating local variable for 'gen_pt'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 62
-                }
-            },
-            "973": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 59
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 326,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 25,
-                            "end_line": 62,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 62
-                        },
-                        "While auto generating local variable for 'gen_pt'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 62
-                }
-            },
-            "974": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 59
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 326,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.pedersen_ptr": 302,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 323,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 25,
-                            "end_line": 62,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 10,
-                            "start_line": 62
-                        },
-                        "While auto generating local variable for 'gen_pt'."
-                    ],
-                    "start_col": 10,
                     "start_line": 62
                 }
             },
@@ -32314,6 +32335,159 @@
                         "__main__.main.d": 325,
                         "__main__.main.d_high": 322,
                         "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 326,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 25,
+                    "end_line": 62,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 25,
+                            "end_line": 62,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 62
+                        },
+                        "While auto generating local variable for 'gen_pt'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 62
+                }
+            },
+            "979": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 59
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 326,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 25,
+                    "end_line": 62,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 25,
+                            "end_line": 62,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 62
+                        },
+                        "While auto generating local variable for 'gen_pt'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 62
+                }
+            },
+            "980": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 59
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 326,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.pedersen_ptr": 302,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 323,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 25,
+                    "end_line": 62,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 25,
+                            "end_line": 62,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 10,
+                            "start_line": 62
+                        },
+                        "While auto generating local variable for 'gen_pt'."
+                    ],
+                    "start_col": 10,
+                    "start_line": 62
+                }
+            },
+            "981": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 59
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
                         "__main__.main.gen_pt": 327,
                         "__main__.main.msg_high": 317,
                         "__main__.main.msg_low": 316,
@@ -32350,7 +32524,7 @@
                     "start_line": 34
                 }
             },
-            "979": {
+            "982": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32401,7 +32575,7 @@
                     "start_line": 50
                 }
             },
-            "981": {
+            "984": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32452,7 +32626,7 @@
                     "start_line": 49
                 }
             },
-            "983": {
+            "986": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32491,7 +32665,7 @@
                     "start_line": 65
                 }
             },
-            "985": {
+            "988": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32543,7 +32717,7 @@
                     "start_line": 65
                 }
             },
-            "986": {
+            "989": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32595,7 +32769,7 @@
                     "start_line": 56
                 }
             },
-            "987": {
+            "990": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32647,7 +32821,7 @@
                     "start_line": 55
                 }
             },
-            "988": {
+            "991": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32687,7 +32861,7 @@
                     "start_line": 68
                 }
             },
-            "990": {
+            "993": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32740,7 +32914,7 @@
                     "start_line": 68
                 }
             },
-            "991": {
+            "994": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32793,7 +32967,7 @@
                     "start_line": 65
                 }
             },
-            "992": {
+            "995": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32846,7 +33020,7 @@
                     "start_line": 68
                 }
             },
-            "993": {
+            "996": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32887,7 +33061,7 @@
                     "start_line": 71
                 }
             },
-            "995": {
+            "998": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -32941,7 +33115,7 @@
                     "start_line": 71
                 }
             },
-            "996": {
+            "999": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33019,7 +33193,7 @@
                     "start_line": 119
                 }
             },
-            "997": {
+            "1000": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33073,7 +33247,7 @@
                     "start_line": 71
                 }
             },
-            "998": {
+            "1001": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33115,7 +33289,7 @@
                     "start_line": 76
                 }
             },
-            "1000": {
+            "1003": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33123,7 +33297,7 @@
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 46,
-                        "offset": 105
+                        "offset": 108
                     },
                     "reference_ids": {
                         "__main__.main.bitwise_ptr": 304,
@@ -33156,235 +33330,6 @@
                     },
                     "start_col": 15,
                     "start_line": 77
-                }
-            },
-            "1002": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 154
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 337,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [
-                    {
-                        "location": {
-                            "end_col": 7,
-                            "end_line": 84,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "start_col": 5,
-                            "start_line": 79
-                        },
-                        "n_prefix_newlines": 1
-                    }
-                ],
-                "inst": {
-                    "end_col": 39,
-                    "end_line": 119,
-                    "input_file": {
-                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/cairo_secp/bigint.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 43,
-                            "end_line": 77,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "parent_location": [
-                                {
-                                    "end_col": 28,
-                                    "end_line": 313,
-                                    "input_file": {
-                                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/cairo_secp/ec.cairo"
-                                    },
-                                    "parent_location": [
-                                        {
-                                            "end_col": 49,
-                                            "end_line": 87,
-                                            "input_file": {
-                                                "filename": "src/rfc6979/rfc6979.cairo"
-                                            },
-                                            "start_col": 32,
-                                            "start_line": 87
-                                        },
-                                        "While trying to retrieve the implicit argument 'range_check_ptr' in:"
-                                    ],
-                                    "start_col": 13,
-                                    "start_line": 313
-                                },
-                                "While expanding the reference 'range_check_ptr' in:"
-                            ],
-                            "start_col": 15,
-                            "start_line": 77
-                        },
-                        "While trying to update the implicit return value 'range_check_ptr' in:"
-                    ],
-                    "start_col": 24,
-                    "start_line": 119
-                }
-            },
-            "1003": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 155
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 337,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 25,
-                            "end_line": 62,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "parent_location": [
-                                {
-                                    "end_col": 45,
-                                    "end_line": 87,
-                                    "input_file": {
-                                        "filename": "src/rfc6979/rfc6979.cairo"
-                                    },
-                                    "start_col": 39,
-                                    "start_line": 87
-                                },
-                                "While expanding the reference 'gen_pt' in:"
-                            ],
-                            "start_col": 10,
-                            "start_line": 62
-                        },
-                        "While auto generating local variable for 'gen_pt'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 62
-                }
-            },
-            "1004": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 46,
-                        "offset": 156
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 337,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "parent_location": [
-                        {
-                            "end_col": 25,
-                            "end_line": 62,
-                            "input_file": {
-                                "filename": "src/rfc6979/rfc6979.cairo"
-                            },
-                            "parent_location": [
-                                {
-                                    "end_col": 45,
-                                    "end_line": 87,
-                                    "input_file": {
-                                        "filename": "src/rfc6979/rfc6979.cairo"
-                                    },
-                                    "start_col": 39,
-                                    "start_line": 87
-                                },
-                                "While expanding the reference 'gen_pt' in:"
-                            ],
-                            "start_col": 10,
-                            "start_line": 62
-                        },
-                        "While auto generating local variable for 'gen_pt'."
-                    ],
-                    "start_col": 10,
-                    "start_line": 62
                 }
             },
             "1005": {
@@ -33420,39 +33365,64 @@
                         "__main__.main.z": 319
                     }
                 },
-                "hints": [],
+                "hints": [
+                    {
+                        "location": {
+                            "end_col": 7,
+                            "end_line": 87,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 5,
+                            "start_line": 79
+                        },
+                        "n_prefix_newlines": 1
+                    }
+                ],
                 "inst": {
-                    "end_col": 25,
-                    "end_line": 62,
+                    "end_col": 39,
+                    "end_line": 119,
                     "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
+                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/cairo_secp/bigint.cairo"
                     },
                     "parent_location": [
                         {
-                            "end_col": 25,
-                            "end_line": 62,
+                            "end_col": 43,
+                            "end_line": 77,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
                             "parent_location": [
                                 {
-                                    "end_col": 45,
-                                    "end_line": 87,
+                                    "end_col": 28,
+                                    "end_line": 313,
                                     "input_file": {
-                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                        "filename": "/home/ubuntu/cairo_venv/lib/python3.10/site-packages/starkware/cairo/common/cairo_secp/ec.cairo"
                                     },
-                                    "start_col": 39,
-                                    "start_line": 87
+                                    "parent_location": [
+                                        {
+                                            "end_col": 49,
+                                            "end_line": 90,
+                                            "input_file": {
+                                                "filename": "src/rfc6979/rfc6979.cairo"
+                                            },
+                                            "start_col": 32,
+                                            "start_line": 90
+                                        },
+                                        "While trying to retrieve the implicit argument 'range_check_ptr' in:"
+                                    ],
+                                    "start_col": 13,
+                                    "start_line": 313
                                 },
-                                "While expanding the reference 'gen_pt' in:"
+                                "While expanding the reference 'range_check_ptr' in:"
                             ],
-                            "start_col": 10,
-                            "start_line": 62
+                            "start_col": 15,
+                            "start_line": 77
                         },
-                        "While auto generating local variable for 'gen_pt'."
+                        "While trying to update the implicit return value 'range_check_ptr' in:"
                     ],
-                    "start_col": 10,
-                    "start_line": 62
+                    "start_col": 24,
+                    "start_line": 119
                 }
             },
             "1006": {
@@ -33505,12 +33475,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 87,
+                                    "end_line": 90,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 87
+                                    "start_line": 90
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -33573,12 +33543,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 87,
+                                    "end_line": 90,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 87
+                                    "start_line": 90
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -33641,12 +33611,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 87,
+                                    "end_line": 90,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 87
+                                    "start_line": 90
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -33694,25 +33664,37 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 11,
-                    "end_line": 77,
+                    "end_col": 25,
+                    "end_line": 62,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "parent_location": [
                         {
-                            "end_col": 48,
-                            "end_line": 87,
+                            "end_col": 25,
+                            "end_line": 62,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
-                            "start_col": 47,
-                            "start_line": 87
+                            "parent_location": [
+                                {
+                                    "end_col": 45,
+                                    "end_line": 90,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "start_col": 39,
+                                    "start_line": 90
+                                },
+                                "While expanding the reference 'gen_pt' in:"
+                            ],
+                            "start_col": 10,
+                            "start_line": 62
                         },
-                        "While expanding the reference 'n' in:"
+                        "While auto generating local variable for 'gen_pt'."
                     ],
                     "start_col": 10,
-                    "start_line": 77
+                    "start_line": 62
                 }
             },
             "1010": {
@@ -33750,25 +33732,37 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 11,
-                    "end_line": 77,
+                    "end_col": 25,
+                    "end_line": 62,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "parent_location": [
                         {
-                            "end_col": 48,
-                            "end_line": 87,
+                            "end_col": 25,
+                            "end_line": 62,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
-                            "start_col": 47,
-                            "start_line": 87
+                            "parent_location": [
+                                {
+                                    "end_col": 45,
+                                    "end_line": 90,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "start_col": 39,
+                                    "start_line": 90
+                                },
+                                "While expanding the reference 'gen_pt' in:"
+                            ],
+                            "start_col": 10,
+                            "start_line": 62
                         },
-                        "While expanding the reference 'n' in:"
+                        "While auto generating local variable for 'gen_pt'."
                     ],
                     "start_col": 10,
-                    "start_line": 77
+                    "start_line": 62
                 }
             },
             "1011": {
@@ -33806,25 +33800,37 @@
                 },
                 "hints": [],
                 "inst": {
-                    "end_col": 11,
-                    "end_line": 77,
+                    "end_col": 25,
+                    "end_line": 62,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "parent_location": [
                         {
-                            "end_col": 48,
-                            "end_line": 87,
+                            "end_col": 25,
+                            "end_line": 62,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
-                            "start_col": 47,
-                            "start_line": 87
+                            "parent_location": [
+                                {
+                                    "end_col": 45,
+                                    "end_line": 90,
+                                    "input_file": {
+                                        "filename": "src/rfc6979/rfc6979.cairo"
+                                    },
+                                    "start_col": 39,
+                                    "start_line": 90
+                                },
+                                "While expanding the reference 'gen_pt' in:"
+                            ],
+                            "start_col": 10,
+                            "start_line": 62
                         },
-                        "While expanding the reference 'n' in:"
+                        "While auto generating local variable for 'gen_pt'."
                     ],
                     "start_col": 10,
-                    "start_line": 77
+                    "start_line": 62
                 }
             },
             "1012": {
@@ -33862,16 +33868,184 @@
                 },
                 "hints": [],
                 "inst": {
+                    "end_col": 11,
+                    "end_line": 77,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 48,
+                            "end_line": 90,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 47,
+                            "start_line": 90
+                        },
+                        "While expanding the reference 'n' in:"
+                    ],
+                    "start_col": 10,
+                    "start_line": 77
+                }
+            },
+            "1013": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 165
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 337,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 77,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 48,
+                            "end_line": 90,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 47,
+                            "start_line": 90
+                        },
+                        "While expanding the reference 'n' in:"
+                    ],
+                    "start_col": 10,
+                    "start_line": 77
+                }
+            },
+            "1014": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 166
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 337,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 11,
+                    "end_line": 77,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "parent_location": [
+                        {
+                            "end_col": 48,
+                            "end_line": 90,
+                            "input_file": {
+                                "filename": "src/rfc6979/rfc6979.cairo"
+                            },
+                            "start_col": 47,
+                            "start_line": 90
+                        },
+                        "While expanding the reference 'n' in:"
+                    ],
+                    "start_col": 10,
+                    "start_line": 77
+                }
+            },
+            "1015": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 46,
+                        "offset": 167
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 337,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
                     "end_col": 49,
-                    "end_line": 87,
+                    "end_line": 90,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 32,
-                    "start_line": 87
+                    "start_line": 90
                 }
             },
-            "1014": {
+            "1017": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33909,27 +34083,27 @@
                     {
                         "location": {
                             "end_col": 11,
-                            "end_line": 95,
+                            "end_line": 98,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
                             "start_col": 9,
-                            "start_line": 88
+                            "start_line": 91
                         },
                         "n_prefix_newlines": 1
                     }
                 ],
                 "inst": {
                     "end_col": 28,
-                    "end_line": 96,
+                    "end_line": 99,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 9,
-                    "start_line": 96
+                    "start_line": 99
                 }
             },
-            "1015": {
+            "1018": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -33966,15 +34140,15 @@
                 "hints": [],
                 "inst": {
                     "end_col": 28,
-                    "end_line": 96,
+                    "end_line": 99,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 9,
-                    "start_line": 96
+                    "start_line": 99
                 }
             },
-            "1016": {
+            "1019": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34011,15 +34185,15 @@
                 "hints": [],
                 "inst": {
                     "end_col": 28,
-                    "end_line": 96,
+                    "end_line": 99,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 9,
-                    "start_line": 96
+                    "start_line": 99
                 }
             },
-            "1017": {
+            "1020": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34063,7 +34237,7 @@
                     "parent_location": [
                         {
                             "end_col": 49,
-                            "end_line": 87,
+                            "end_line": 90,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
@@ -34077,12 +34251,12 @@
                                     "parent_location": [
                                         {
                                             "end_col": 49,
-                                            "end_line": 101,
+                                            "end_line": 104,
                                             "input_file": {
                                                 "filename": "src/rfc6979/rfc6979.cairo"
                                             },
                                             "start_col": 32,
-                                            "start_line": 101
+                                            "start_line": 104
                                         },
                                         "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                     ],
@@ -34092,7 +34266,7 @@
                                 "While expanding the reference 'range_check_ptr' in:"
                             ],
                             "start_col": 32,
-                            "start_line": 87
+                            "start_line": 90
                         },
                         "While trying to update the implicit return value 'range_check_ptr' in:"
                     ],
@@ -34100,7 +34274,7 @@
                     "start_line": 313
                 }
             },
-            "1018": {
+            "1021": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34151,12 +34325,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34169,7 +34343,7 @@
                     "start_line": 62
                 }
             },
-            "1019": {
+            "1022": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34220,12 +34394,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34238,7 +34412,7 @@
                     "start_line": 62
                 }
             },
-            "1020": {
+            "1023": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34289,12 +34463,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34307,7 +34481,7 @@
                     "start_line": 62
                 }
             },
-            "1021": {
+            "1024": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34358,12 +34532,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34376,7 +34550,7 @@
                     "start_line": 62
                 }
             },
-            "1022": {
+            "1025": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34427,12 +34601,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34445,7 +34619,7 @@
                     "start_line": 62
                 }
             },
-            "1023": {
+            "1026": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34496,12 +34670,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 45,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 39,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'gen_pt' in:"
                             ],
@@ -34514,7 +34688,7 @@
                     "start_line": 62
                 }
             },
-            "1024": {
+            "1027": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34565,12 +34739,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 48,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 47,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'd' in:"
                             ],
@@ -34583,7 +34757,7 @@
                     "start_line": 61
                 }
             },
-            "1025": {
+            "1028": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34634,12 +34808,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 48,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 47,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'd' in:"
                             ],
@@ -34652,7 +34826,7 @@
                     "start_line": 61
                 }
             },
-            "1026": {
+            "1029": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34703,12 +34877,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 48,
-                                    "end_line": 101,
+                                    "end_line": 104,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 47,
-                                    "start_line": 101
+                                    "start_line": 104
                                 },
                                 "While expanding the reference 'd' in:"
                             ],
@@ -34721,7 +34895,7 @@
                     "start_line": 61
                 }
             },
-            "1027": {
+            "1030": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34758,153 +34932,153 @@
                 "hints": [],
                 "inst": {
                     "end_col": 49,
-                    "end_line": 101,
+                    "end_line": 104,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 32,
-                    "start_line": 101
-                }
-            },
-            "1029": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 48,
-                        "offset": 0
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_d": 342,
-                        "__main__.main.gen_n": 340,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 341,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 31,
-                    "end_line": 102,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "start_col": 9,
-                    "start_line": 102
-                }
-            },
-            "1030": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 48,
-                        "offset": 0
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_d": 342,
-                        "__main__.main.gen_n": 340,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 341,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 31,
-                    "end_line": 102,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "start_col": 9,
-                    "start_line": 102
-                }
-            },
-            "1031": {
-                "accessible_scopes": [
-                    "__main__",
-                    "__main__.main"
-                ],
-                "flow_tracking_data": {
-                    "ap_tracking": {
-                        "group": 48,
-                        "offset": 0
-                    },
-                    "reference_ids": {
-                        "__main__.main.bitwise_ptr": 304,
-                        "__main__.main.d": 325,
-                        "__main__.main.d_high": 322,
-                        "__main__.main.d_low": 321,
-                        "__main__.main.gen_d": 342,
-                        "__main__.main.gen_n": 340,
-                        "__main__.main.gen_pt": 327,
-                        "__main__.main.message_hash": 329,
-                        "__main__.main.msg_high": 317,
-                        "__main__.main.msg_low": 316,
-                        "__main__.main.n": 338,
-                        "__main__.main.n_uint256": 336,
-                        "__main__.main.nonce": 333,
-                        "__main__.main.pedersen_ptr": 334,
-                        "__main__.main.privatekey_hash": 331,
-                        "__main__.main.pt": 310,
-                        "__main__.main.r": 313,
-                        "__main__.main.range_check_ptr": 341,
-                        "__main__.main.s": 315,
-                        "__main__.main.x_as_bigint3": 306,
-                        "__main__.main.y_as_bigint3": 308,
-                        "__main__.main.z": 319
-                    }
-                },
-                "hints": [],
-                "inst": {
-                    "end_col": 31,
-                    "end_line": 102,
-                    "input_file": {
-                        "filename": "src/rfc6979/rfc6979.cairo"
-                    },
-                    "start_col": 9,
-                    "start_line": 102
+                    "start_line": 104
                 }
             },
             "1032": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 48,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_d": 342,
+                        "__main__.main.gen_n": 340,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 341,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 31,
+                    "end_line": 105,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 105
+                }
+            },
+            "1033": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 48,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_d": 342,
+                        "__main__.main.gen_n": 340,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 341,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 31,
+                    "end_line": 105,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 105
+                }
+            },
+            "1034": {
+                "accessible_scopes": [
+                    "__main__",
+                    "__main__.main"
+                ],
+                "flow_tracking_data": {
+                    "ap_tracking": {
+                        "group": 48,
+                        "offset": 0
+                    },
+                    "reference_ids": {
+                        "__main__.main.bitwise_ptr": 304,
+                        "__main__.main.d": 325,
+                        "__main__.main.d_high": 322,
+                        "__main__.main.d_low": 321,
+                        "__main__.main.gen_d": 342,
+                        "__main__.main.gen_n": 340,
+                        "__main__.main.gen_pt": 327,
+                        "__main__.main.message_hash": 329,
+                        "__main__.main.msg_high": 317,
+                        "__main__.main.msg_low": 316,
+                        "__main__.main.n": 338,
+                        "__main__.main.n_uint256": 336,
+                        "__main__.main.nonce": 333,
+                        "__main__.main.pedersen_ptr": 334,
+                        "__main__.main.privatekey_hash": 331,
+                        "__main__.main.pt": 310,
+                        "__main__.main.r": 313,
+                        "__main__.main.range_check_ptr": 341,
+                        "__main__.main.s": 315,
+                        "__main__.main.x_as_bigint3": 306,
+                        "__main__.main.y_as_bigint3": 308,
+                        "__main__.main.z": 319
+                    }
+                },
+                "hints": [],
+                "inst": {
+                    "end_col": 31,
+                    "end_line": 105,
+                    "input_file": {
+                        "filename": "src/rfc6979/rfc6979.cairo"
+                    },
+                    "start_col": 9,
+                    "start_line": 105
+                }
+            },
+            "1035": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -34963,12 +35137,12 @@
                                     "parent_location": [
                                         {
                                             "end_col": 15,
-                                            "end_line": 106,
+                                            "end_line": 109,
                                             "input_file": {
                                                 "filename": "src/rfc6979/rfc6979.cairo"
                                             },
                                             "start_col": 5,
-                                            "start_line": 106
+                                            "start_line": 109
                                         },
                                         "While trying to retrieve the implicit argument 'pedersen_ptr' in:"
                                     ],
@@ -34986,7 +35160,7 @@
                     "start_line": 71
                 }
             },
-            "1033": {
+            "1036": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -35031,7 +35205,7 @@
                     "parent_location": [
                         {
                             "end_col": 49,
-                            "end_line": 101,
+                            "end_line": 104,
                             "input_file": {
                                 "filename": "src/rfc6979/rfc6979.cairo"
                             },
@@ -35045,12 +35219,12 @@
                                     "parent_location": [
                                         {
                                             "end_col": 15,
-                                            "end_line": 106,
+                                            "end_line": 109,
                                             "input_file": {
                                                 "filename": "src/rfc6979/rfc6979.cairo"
                                             },
                                             "start_col": 5,
-                                            "start_line": 106
+                                            "start_line": 109
                                         },
                                         "While trying to retrieve the implicit argument 'range_check_ptr' in:"
                                     ],
@@ -35060,7 +35234,7 @@
                                 "While expanding the reference 'range_check_ptr' in:"
                             ],
                             "start_col": 32,
-                            "start_line": 101
+                            "start_line": 104
                         },
                         "While trying to update the implicit return value 'range_check_ptr' in:"
                     ],
@@ -35068,7 +35242,7 @@
                     "start_line": 313
                 }
             },
-            "1034": {
+            "1037": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -35120,12 +35294,12 @@
                             "parent_location": [
                                 {
                                     "end_col": 15,
-                                    "end_line": 106,
+                                    "end_line": 109,
                                     "input_file": {
                                         "filename": "src/rfc6979/rfc6979.cairo"
                                     },
                                     "start_col": 5,
-                                    "start_line": 106
+                                    "start_line": 109
                                 },
                                 "While trying to retrieve the implicit argument 'bitwise_ptr' in:"
                             ],
@@ -35138,7 +35312,7 @@
                     "start_line": 36
                 }
             },
-            "1035": {
+            "1038": {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
@@ -35176,12 +35350,12 @@
                 "hints": [],
                 "inst": {
                     "end_col": 15,
-                    "end_line": 106,
+                    "end_line": 109,
                     "input_file": {
                         "filename": "src/rfc6979/rfc6979.cairo"
                     },
                     "start_col": 5,
-                    "start_line": 106
+                    "start_line": 109
                 }
             }
         }
@@ -35568,7 +35742,7 @@
                 }
             }
         ],
-        "963": [
+        "966": [
             {
                 "accessible_scopes": [
                     "__main__",
@@ -35598,17 +35772,17 @@
                 }
             }
         ],
-        "1002": [
+        "1005": [
             {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "print(\"nonce\", ids.nonce)\nprint(\"n\", ids.n)\nprint(\"n_uint256.low\", ids.n_uint256.low)\nprint(\"n_uint256.high\", ids.n_uint256.high)",
+                "code": "print(\"nonce\", hex(ids.nonce), ids.nonce)\nprint(\"n\", ids.n)\nprint(\"n.d0\", hex(ids.n.d0), ids.n.d0)\nprint(\"n.d1\", hex(ids.n.d1), ids.n.d1)\nprint(\"n.d2\", hex(ids.n.d2), ids.n.d2)\nprint(\"n_uint256.low\", hex(ids.n_uint256.low), ids.n_uint256.low)\nprint(\"n_uint256.high\", hex(ids.n_uint256.high), ids.n_uint256.high)",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 46,
-                        "offset": 154
+                        "offset": 157
                     },
                     "reference_ids": {
                         "__main__.main.bitwise_ptr": 304,
@@ -35635,13 +35809,13 @@
                 }
             }
         ],
-        "1014": [
+        "1017": [
             {
                 "accessible_scopes": [
                     "__main__",
                     "__main__.main"
                 ],
-                "code": "print(\"r.d0\", ids.r.d0)\nprint(\"r.d1\", ids.r.d1)\nprint(\"r.d2\", ids.r.d2)\nprint(\"gen_n.x.d0\", ids.gen_n.x.d0)\nprint(\"gen_n.x.d1\", ids.gen_n.x.d1)\nprint(\"gen_n.x.d2\", ids.gen_n.x.d2)",
+                "code": "print(\"r.d0\", hex(ids.r.d0), ids.r.d0)\nprint(\"r.d1\", hex(ids.r.d1), ids.r.d1)\nprint(\"r.d2\", hex(ids.r.d2), ids.r.d2)\nprint(\"gen_n.x.d0\", hex(ids.gen_n.x.d0), ids.gen_n.x.d0)\nprint(\"gen_n.x.d1\", hex(ids.gen_n.x.d1), ids.gen_n.x.d1)\nprint(\"gen_n.x.d2\", hex(ids.gen_n.x.d2), ids.gen_n.x.d2)",
                 "flow_tracking_data": {
                     "ap_tracking": {
                         "group": 47,
@@ -35820,7 +35994,7 @@
                         "offset": 21
                     },
                     "pc": 898,
-                    "value": "cast(([ap + (-2)], [ap + (-1)]), starkware.cairo.common.uint256.Uint256)"
+                    "value": "cast(([ap + (-1)], [ap + (-2)]), starkware.cairo.common.uint256.Uint256)"
                 }
             ],
             "type": "reference"
@@ -35835,7 +36009,7 @@
         },
         "__main__.main": {
             "decorators": [],
-            "pc": 899,
+            "pc": 902,
             "type": "function"
         },
         "__main__.main.Args": {
@@ -35880,7 +36054,7 @@
                         "group": 45,
                         "offset": 0
                     },
-                    "pc": 899,
+                    "pc": 902,
                     "value": "[cast(fp + (-3), starkware.cairo.common.cairo_builtins.BitwiseBuiltin**)]"
                 }
             ],
@@ -35895,7 +36069,7 @@
                         "group": 46,
                         "offset": 51
                     },
-                    "pc": 967,
+                    "pc": 970,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 },
                 {
@@ -35903,7 +36077,7 @@
                         "group": 46,
                         "offset": 51
                     },
-                    "pc": 970,
+                    "pc": 973,
                     "value": "[cast(fp + 11, starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -35918,7 +36092,7 @@
                         "group": 46,
                         "offset": 0
                     },
-                    "pc": 963,
+                    "pc": 966,
                     "value": "[cast(fp + 10, felt*)]"
                 }
             ],
@@ -35933,7 +36107,7 @@
                         "group": 46,
                         "offset": 0
                     },
-                    "pc": 963,
+                    "pc": 966,
                     "value": "[cast(fp + 9, felt*)]"
                 }
             ],
@@ -35948,7 +36122,7 @@
                         "group": 48,
                         "offset": 0
                     },
-                    "pc": 1029,
+                    "pc": 1032,
                     "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
                 }
             ],
@@ -35963,7 +36137,7 @@
                         "group": 47,
                         "offset": 0
                     },
-                    "pc": 1014,
+                    "pc": 1017,
                     "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
                 }
             ],
@@ -35978,7 +36152,7 @@
                         "group": 46,
                         "offset": 59
                     },
-                    "pc": 972,
+                    "pc": 975,
                     "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
                 },
                 {
@@ -35986,7 +36160,7 @@
                         "group": 46,
                         "offset": 59
                     },
-                    "pc": 978,
+                    "pc": 981,
                     "value": "[cast(fp + 14, starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
                 }
             ],
@@ -36001,7 +36175,7 @@
                         "group": 46,
                         "offset": 66
                     },
-                    "pc": 985,
+                    "pc": 988,
                     "value": "[cast(ap + (-1), felt*)]"
                 }
             ],
@@ -36016,7 +36190,7 @@
                         "group": 45,
                         "offset": 229
                     },
-                    "pc": 938,
+                    "pc": 941,
                     "value": "cast(210471495877978808261252870775589739017, felt)"
                 }
             ],
@@ -36031,7 +36205,7 @@
                         "group": 45,
                         "offset": 229
                     },
-                    "pc": 938,
+                    "pc": 941,
                     "value": "cast(258820153533044278993287746028996021438, felt)"
                 }
             ],
@@ -36044,9 +36218,9 @@
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 154
+                        "offset": 157
                     },
-                    "pc": 1002,
+                    "pc": 1005,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -36059,9 +36233,9 @@
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 105
+                        "offset": 108
                     },
-                    "pc": 1000,
+                    "pc": 1003,
                     "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
                 }
             ],
@@ -36076,7 +36250,7 @@
                         "group": 46,
                         "offset": 80
                     },
-                    "pc": 995,
+                    "pc": 998,
                     "value": "[cast(ap + (-1), felt*)]"
                 }
             ],
@@ -36091,7 +36265,7 @@
                         "group": 45,
                         "offset": 0
                     },
-                    "pc": 899,
+                    "pc": 902,
                     "value": "[cast(fp + (-5), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36099,7 +36273,7 @@
                         "group": 46,
                         "offset": 66
                     },
-                    "pc": 967,
+                    "pc": 970,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36107,7 +36281,7 @@
                         "group": 46,
                         "offset": 73
                     },
-                    "pc": 972,
+                    "pc": 975,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36115,7 +36289,7 @@
                         "group": 46,
                         "offset": 80
                     },
-                    "pc": 977,
+                    "pc": 980,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36123,7 +36297,7 @@
                         "group": 46,
                         "offset": 66
                     },
-                    "pc": 985,
+                    "pc": 988,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36131,7 +36305,7 @@
                         "group": 46,
                         "offset": 73
                     },
-                    "pc": 990,
+                    "pc": 993,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36139,7 +36313,7 @@
                         "group": 46,
                         "offset": 80
                     },
-                    "pc": 995,
+                    "pc": 998,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
@@ -36147,7 +36321,7 @@
                         "group": 46,
                         "offset": 80
                     },
-                    "pc": 996,
+                    "pc": 999,
                     "value": "[cast(fp + 20, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 }
             ],
@@ -36162,7 +36336,7 @@
                         "group": 46,
                         "offset": 73
                     },
-                    "pc": 990,
+                    "pc": 993,
                     "value": "[cast(ap + (-1), felt*)]"
                 }
             ],
@@ -36177,7 +36351,7 @@
                         "group": 45,
                         "offset": 125
                     },
-                    "pc": 915,
+                    "pc": 918,
                     "value": "cast(([ap + (-55)], [ap + (-3)]), starkware.cairo.common.cairo_secp.ec.EcPoint)"
                 },
                 {
@@ -36185,7 +36359,7 @@
                         "group": 45,
                         "offset": 125
                     },
-                    "pc": 921,
+                    "pc": 924,
                     "value": "[cast(fp, starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
                 }
             ],
@@ -36200,7 +36374,7 @@
                         "group": 45,
                         "offset": 177
                     },
-                    "pc": 928,
+                    "pc": 931,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 },
                 {
@@ -36208,7 +36382,7 @@
                         "group": 45,
                         "offset": 177
                     },
-                    "pc": 931,
+                    "pc": 934,
                     "value": "[cast(fp + 6, starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -36223,7 +36397,7 @@
                         "group": 45,
                         "offset": 0
                     },
-                    "pc": 899,
+                    "pc": 902,
                     "value": "[cast(fp + (-4), felt*)]"
                 },
                 {
@@ -36231,7 +36405,7 @@
                         "group": 45,
                         "offset": 54
                     },
-                    "pc": 908,
+                    "pc": 911,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36239,7 +36413,7 @@
                         "group": 45,
                         "offset": 106
                     },
-                    "pc": 915,
+                    "pc": 918,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36247,7 +36421,7 @@
                         "group": 45,
                         "offset": 158
                     },
-                    "pc": 922,
+                    "pc": 925,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36255,7 +36429,7 @@
                         "group": 45,
                         "offset": 210
                     },
-                    "pc": 929,
+                    "pc": 932,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36263,7 +36437,7 @@
                         "group": 45,
                         "offset": 262
                     },
-                    "pc": 936,
+                    "pc": 939,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36271,7 +36445,7 @@
                         "group": 46,
                         "offset": 0
                     },
-                    "pc": 954,
+                    "pc": 957,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
@@ -36279,23 +36453,23 @@
                         "group": 46,
                         "offset": 51
                     },
-                    "pc": 958,
+                    "pc": 961,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 105
+                        "offset": 108
                     },
-                    "pc": 981,
+                    "pc": 984,
                     "value": "[cast(ap + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 154
+                        "offset": 157
                     },
-                    "pc": 983,
+                    "pc": 986,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36303,7 +36477,7 @@
                         "group": 47,
                         "offset": 0
                     },
-                    "pc": 995,
+                    "pc": 998,
                     "value": "[cast(ap + (-7), felt*)]"
                 },
                 {
@@ -36311,7 +36485,7 @@
                         "group": 48,
                         "offset": 0
                     },
-                    "pc": 1010,
+                    "pc": 1013,
                     "value": "[cast(ap + (-7), felt*)]"
                 },
                 {
@@ -36319,7 +36493,7 @@
                         "group": 45,
                         "offset": 73
                     },
-                    "pc": 908,
+                    "pc": 911,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36327,7 +36501,7 @@
                         "group": 45,
                         "offset": 125
                     },
-                    "pc": 915,
+                    "pc": 918,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36335,7 +36509,7 @@
                         "group": 45,
                         "offset": 177
                     },
-                    "pc": 928,
+                    "pc": 931,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36343,7 +36517,7 @@
                         "group": 45,
                         "offset": 229
                     },
-                    "pc": 938,
+                    "pc": 941,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36351,7 +36525,7 @@
                         "group": 45,
                         "offset": 281
                     },
-                    "pc": 945,
+                    "pc": 948,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36359,7 +36533,7 @@
                         "group": 46,
                         "offset": 0
                     },
-                    "pc": 963,
+                    "pc": 966,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
@@ -36367,23 +36541,23 @@
                         "group": 46,
                         "offset": 51
                     },
-                    "pc": 967,
+                    "pc": 970,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 105
+                        "offset": 108
                     },
-                    "pc": 1000,
+                    "pc": 1003,
                     "value": "[cast(ap + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 46,
-                        "offset": 154
+                        "offset": 157
                     },
-                    "pc": 1002,
+                    "pc": 1005,
                     "value": "[cast(ap + (-4), felt*)]"
                 },
                 {
@@ -36391,7 +36565,7 @@
                         "group": 47,
                         "offset": 0
                     },
-                    "pc": 1014,
+                    "pc": 1017,
                     "value": "[cast(ap + (-7), felt*)]"
                 },
                 {
@@ -36399,7 +36573,7 @@
                         "group": 48,
                         "offset": 0
                     },
-                    "pc": 1029,
+                    "pc": 1032,
                     "value": "[cast(ap + (-7), felt*)]"
                 }
             ],
@@ -36414,7 +36588,7 @@
                         "group": 45,
                         "offset": 229
                     },
-                    "pc": 938,
+                    "pc": 941,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -36429,7 +36603,7 @@
                         "group": 45,
                         "offset": 73
                     },
-                    "pc": 908,
+                    "pc": 911,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -36444,7 +36618,7 @@
                         "group": 45,
                         "offset": 125
                     },
-                    "pc": 915,
+                    "pc": 918,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -36459,7 +36633,7 @@
                         "group": 45,
                         "offset": 281
                     },
-                    "pc": 945,
+                    "pc": 948,
                     "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
                 }
             ],
@@ -44928,14 +45102,14 @@
                     "offset": 21
                 },
                 "pc": 898,
-                "value": "cast(([ap + (-2)], [ap + (-1)]), starkware.cairo.common.uint256.Uint256)"
+                "value": "cast(([ap + (-1)], [ap + (-2)]), starkware.cairo.common.uint256.Uint256)"
             },
             {
                 "ap_tracking_data": {
                     "group": 45,
                     "offset": 0
                 },
-                "pc": 899,
+                "pc": 902,
                 "value": "[cast(fp + (-5), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
             },
             {
@@ -44943,7 +45117,7 @@
                     "group": 45,
                     "offset": 0
                 },
-                "pc": 899,
+                "pc": 902,
                 "value": "[cast(fp + (-4), felt*)]"
             },
             {
@@ -44951,7 +45125,7 @@
                     "group": 45,
                     "offset": 0
                 },
-                "pc": 899,
+                "pc": 902,
                 "value": "[cast(fp + (-3), starkware.cairo.common.cairo_builtins.BitwiseBuiltin**)]"
             },
             {
@@ -44959,7 +45133,7 @@
                     "group": 45,
                     "offset": 73
                 },
-                "pc": 908,
+                "pc": 911,
                 "value": "[cast(ap + (-4), felt*)]"
             },
             {
@@ -44967,7 +45141,7 @@
                     "group": 45,
                     "offset": 73
                 },
-                "pc": 908,
+                "pc": 911,
                 "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -44975,7 +45149,7 @@
                     "group": 45,
                     "offset": 125
                 },
-                "pc": 915,
+                "pc": 918,
                 "value": "[cast(ap + (-4), felt*)]"
             },
             {
@@ -44983,7 +45157,7 @@
                     "group": 45,
                     "offset": 125
                 },
-                "pc": 915,
+                "pc": 918,
                 "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -44991,7 +45165,7 @@
                     "group": 45,
                     "offset": 125
                 },
-                "pc": 915,
+                "pc": 918,
                 "value": "cast(([ap + (-55)], [ap + (-3)]), starkware.cairo.common.cairo_secp.ec.EcPoint)"
             },
             {
@@ -44999,7 +45173,7 @@
                     "group": 45,
                     "offset": 125
                 },
-                "pc": 921,
+                "pc": 924,
                 "value": "[cast(fp, starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
             },
             {
@@ -45007,16 +45181,8 @@
                     "group": 45,
                     "offset": 177
                 },
-                "pc": 928,
+                "pc": 931,
                 "value": "[cast(ap + (-4), felt*)]"
-            },
-            {
-                "ap_tracking_data": {
-                    "group": 45,
-                    "offset": 177
-                },
-                "pc": 928,
-                "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
                 "ap_tracking_data": {
@@ -45024,6 +45190,14 @@
                     "offset": 177
                 },
                 "pc": 931,
+                "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 45,
+                    "offset": 177
+                },
+                "pc": 934,
                 "value": "[cast(fp + 6, starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -45031,7 +45205,7 @@
                     "group": 45,
                     "offset": 229
                 },
-                "pc": 938,
+                "pc": 941,
                 "value": "[cast(ap + (-4), felt*)]"
             },
             {
@@ -45039,7 +45213,7 @@
                     "group": 45,
                     "offset": 229
                 },
-                "pc": 938,
+                "pc": 941,
                 "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -45047,7 +45221,7 @@
                     "group": 45,
                     "offset": 229
                 },
-                "pc": 938,
+                "pc": 941,
                 "value": "cast(258820153533044278993287746028996021438, felt)"
             },
             {
@@ -45055,7 +45229,7 @@
                     "group": 45,
                     "offset": 229
                 },
-                "pc": 938,
+                "pc": 941,
                 "value": "cast(210471495877978808261252870775589739017, felt)"
             },
             {
@@ -45063,7 +45237,7 @@
                     "group": 45,
                     "offset": 281
                 },
-                "pc": 945,
+                "pc": 948,
                 "value": "[cast(ap + (-4), felt*)]"
             },
             {
@@ -45071,7 +45245,7 @@
                     "group": 45,
                     "offset": 281
                 },
-                "pc": 945,
+                "pc": 948,
                 "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -45079,7 +45253,7 @@
                     "group": 46,
                     "offset": 0
                 },
-                "pc": 963,
+                "pc": 966,
                 "value": "[cast(ap + (-1), felt*)]"
             },
             {
@@ -45087,7 +45261,7 @@
                     "group": 46,
                     "offset": 0
                 },
-                "pc": 963,
+                "pc": 966,
                 "value": "[cast(fp + 9, felt*)]"
             },
             {
@@ -45095,7 +45269,7 @@
                     "group": 46,
                     "offset": 0
                 },
-                "pc": 963,
+                "pc": 966,
                 "value": "[cast(fp + 10, felt*)]"
             },
             {
@@ -45103,16 +45277,8 @@
                     "group": 46,
                     "offset": 51
                 },
-                "pc": 967,
+                "pc": 970,
                 "value": "[cast(ap + (-4), felt*)]"
-            },
-            {
-                "ap_tracking_data": {
-                    "group": 46,
-                    "offset": 51
-                },
-                "pc": 967,
-                "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
                 "ap_tracking_data": {
@@ -45120,6 +45286,14 @@
                     "offset": 51
                 },
                 "pc": 970,
+                "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
+            },
+            {
+                "ap_tracking_data": {
+                    "group": 46,
+                    "offset": 51
+                },
+                "pc": 973,
                 "value": "[cast(fp + 11, starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -45127,7 +45301,7 @@
                     "group": 46,
                     "offset": 59
                 },
-                "pc": 972,
+                "pc": 975,
                 "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
             },
             {
@@ -45135,7 +45309,7 @@
                     "group": 46,
                     "offset": 59
                 },
-                "pc": 978,
+                "pc": 981,
                 "value": "[cast(fp + 14, starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
             },
             {
@@ -45143,7 +45317,7 @@
                     "group": 46,
                     "offset": 66
                 },
-                "pc": 985,
+                "pc": 988,
                 "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
             },
             {
@@ -45151,7 +45325,7 @@
                     "group": 46,
                     "offset": 66
                 },
-                "pc": 985,
+                "pc": 988,
                 "value": "[cast(ap + (-1), felt*)]"
             },
             {
@@ -45159,7 +45333,7 @@
                     "group": 46,
                     "offset": 73
                 },
-                "pc": 990,
+                "pc": 993,
                 "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
             },
             {
@@ -45167,7 +45341,7 @@
                     "group": 46,
                     "offset": 73
                 },
-                "pc": 990,
+                "pc": 993,
                 "value": "[cast(ap + (-1), felt*)]"
             },
             {
@@ -45175,7 +45349,7 @@
                     "group": 46,
                     "offset": 80
                 },
-                "pc": 995,
+                "pc": 998,
                 "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
             },
             {
@@ -45183,7 +45357,7 @@
                     "group": 46,
                     "offset": 80
                 },
-                "pc": 995,
+                "pc": 998,
                 "value": "[cast(ap + (-1), felt*)]"
             },
             {
@@ -45191,39 +45365,39 @@
                     "group": 46,
                     "offset": 80
                 },
-                "pc": 996,
+                "pc": 999,
                 "value": "[cast(fp + 20, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
             },
             {
                 "ap_tracking_data": {
                     "group": 46,
-                    "offset": 105
+                    "offset": 108
                 },
-                "pc": 1000,
+                "pc": 1003,
                 "value": "[cast(ap + (-3), felt*)]"
             },
             {
                 "ap_tracking_data": {
                     "group": 46,
-                    "offset": 105
+                    "offset": 108
                 },
-                "pc": 1000,
+                "pc": 1003,
                 "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
             },
             {
                 "ap_tracking_data": {
                     "group": 46,
-                    "offset": 154
+                    "offset": 157
                 },
-                "pc": 1002,
+                "pc": 1005,
                 "value": "[cast(ap + (-4), felt*)]"
             },
             {
                 "ap_tracking_data": {
                     "group": 46,
-                    "offset": 154
+                    "offset": 157
                 },
-                "pc": 1002,
+                "pc": 1005,
                 "value": "[cast(ap + (-3), starkware.cairo.common.cairo_secp.bigint.BigInt3*)]"
             },
             {
@@ -45231,7 +45405,7 @@
                     "group": 47,
                     "offset": 0
                 },
-                "pc": 1014,
+                "pc": 1017,
                 "value": "[cast(ap + (-7), felt*)]"
             },
             {
@@ -45239,7 +45413,7 @@
                     "group": 47,
                     "offset": 0
                 },
-                "pc": 1014,
+                "pc": 1017,
                 "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
             },
             {
@@ -45247,7 +45421,7 @@
                     "group": 48,
                     "offset": 0
                 },
-                "pc": 1029,
+                "pc": 1032,
                 "value": "[cast(ap + (-7), felt*)]"
             },
             {
@@ -45255,7 +45429,7 @@
                     "group": 48,
                     "offset": 0
                 },
-                "pc": 1029,
+                "pc": 1032,
                 "value": "[cast(ap + (-6), starkware.cairo.common.cairo_secp.ec.EcPoint*)]"
             }
         ]

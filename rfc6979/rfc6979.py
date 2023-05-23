@@ -50,7 +50,7 @@ nonce = pedersen_hash(
         int("0x"+key[32:64], 16)
     )
 )
-nonce_bytes = nonce.to_bytes(32, 'little')
+nonce_bytes = nonce.to_bytes(32, 'big')
 print("nonce", nonce_bytes.hex())
 ndata = ffi.new("char [32]", nonce_bytes )
 # custom nonce function -->
@@ -101,6 +101,9 @@ pprint.pprint({
 #  'sig_r_2': '0x276325f4cbe8169fc53ade4a407c2fc8',
 #  'sig_s_1': '0x4d86fbe3bde6975dd5a91fdc95ad6544',
 #  'sig_s_2': '0xdcdf0dab206f02224ce7e2b151bd82ab'}
+
+# let's calculate expected value of nonce * G
+
 
 # Write the data (public keys and votes) to a JSON file.
 input_data = {
